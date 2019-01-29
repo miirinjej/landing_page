@@ -2,7 +2,7 @@
   <div class="navbar">
     <div class="l-columns-3">
       <div class="navbar-brand-name"></div>
-      <main-menu />
+      <main-menu :items="menuItems" />
       <button class="navbar-try-for-free-button button"></button>
     </div>
   </div>
@@ -16,8 +16,21 @@
     components: {
       MainMenu,
     },
+    data() {
+      return {
+        menuItems: [
+          { name: 'Home' },
+          { name: 'About' },
+          { name: 'Features' },
+          { name: 'Pricing' },
+          { name: 'Screenshot' },
+          { name: 'Reviews' },
+          { name: 'Contact' },
+        ],
+      };
+    },
   };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 </style>
