@@ -1,6 +1,9 @@
 <template>
   <div class="l-container">
-    <header class="home main-header">
+    <header
+      id="home"
+      class="home main-header"
+    >
       <carousel class="home-carousel">
         <slide class="home-carousel-slide">
           <div class="l-columns-2">
@@ -35,7 +38,10 @@
         </slide>
       </carousel>
     </header>
-    <section class="about">
+    <section
+      id="about"
+      class="about"
+    >
       <h2 class="about-header">
         About The App
       </h2>
@@ -79,7 +85,10 @@
         </div>
       </div>
     </section>
-    <section class="features">
+    <section
+      id="features"
+      class="features"
+    >
       <h2 class="features-header">
         Features The App
       </h2>
@@ -131,7 +140,10 @@
         </ul>
       </div>
     </section>
-    <section class="pricing">
+    <section
+      id="pricing"
+      class="pricing"
+    >
       <h2 class="pricing-header">
         Pricing Plan
       </h2>
@@ -235,7 +247,10 @@
         </div>
       </div>
     </section>
-    <section class="screenshot">
+    <section
+      id="screenshot"
+      class="screenshot"
+    >
       <h2 class="screenshot-header">
         App Screenshots
       </h2>
@@ -259,7 +274,10 @@
         </div>
       </carousel>
     </section>
-    <section class="reviews">
+    <section
+      id="reviews"
+      class="reviews"
+    >
       <h2 class="reviews-header">
         Some Talk of Our Clients
       </h2>
@@ -302,7 +320,10 @@
         </slide>
       </carousel>
     </section>
-    <section class="contact">
+    <section
+      id="contact"
+      class="contact"
+    >
       <h2 class="contact-header">
         Say Hello To Us!
       </h2>
