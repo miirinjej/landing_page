@@ -1,4 +1,4 @@
-# landing_page
+# landing-page
 
 > The best app to increase your productivity
 
