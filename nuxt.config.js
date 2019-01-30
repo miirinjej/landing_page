@@ -23,7 +23,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#ffffff' },
 
   /*
   ** Global CSS
@@ -41,6 +41,53 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    [ 'nuxt-fontawesome', {
+      component: 'fa',
+      imports: [
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: [
+            'faApple',
+            'faGooglePlay',
+            'faFacebookF',
+            'faTwitter',
+            'faInstagram',
+            'faGooglePlusG',
+            'faBehance',
+            'faDribbble',
+          ],
+        },
+        {
+          set: '@fortawesome/free-regular-svg-icons',
+          icons: [
+            'faCircle',
+            'faThumbsUp',
+          ],
+        },
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: [
+            'faCheck',
+            'faCircle',
+            'faCode',
+            'faDownload',
+            'faEllipsisH',
+            'faHeadset',
+            'faLayerGroup',
+            'faLock',
+            'faLongArrowAltRight',
+            'faLongArrowAltLeft',
+            'faQuoteLeft',
+            'faQuoteRight',
+            'faSquare',
+            'faTimes',
+            'faMap',
+            'faPhone',
+            'faEnvelope',
+          ],
+        },
+      ],
+    }],
   ],
 
   /*
