@@ -90,7 +90,15 @@ module.exports = {
         },
       ],
     }],
+    '@nuxtjs/style-resources',
   ],
+
+  /*
+  ** Style resources
+  */
+  styleResources: {
+    scss: './assets/vars/*.scss',
+  },
 
   /*
   ** Build configuration

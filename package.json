@@ -16,10 +16,13 @@
     "@fortawesome/free-regular-svg-icons": "^5.7.0",
     "@fortawesome/free-solid-svg-icons": "^5.7.0",
     "@fortawesome/vue-fontawesome": "^0.1.5",
+    "@nuxtjs/style-resources": "^0.1.1",
     "cross-env": "^5.2.0",
+    "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.3.4",
     "nuxt-fontawesome": "^0.4.0",
+    "sass-loader": "^7.1.0",
     "vue-carousel": "^0.17.0"
   },
   "devDependencies": {
