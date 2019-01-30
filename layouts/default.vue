@@ -22,13 +22,13 @@
   }
 
   body {
-    font: 1.25em/1.25 $primary-font;
+    font: 1.25em/1.25 $content_font;
   }
 
   h1,
   h2,
   h3 {
-    font-family: $secondary-font;
+    font-family: $header_font;
   }
 
   *,

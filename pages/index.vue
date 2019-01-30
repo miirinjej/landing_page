@@ -461,15 +461,15 @@
 <style lang="scss">
   @media only screen {
     .home-promo-download-button-store {
-      font-family: $secondary-font;
-    }
-
-    .main-footer-copyright {
-      font-family: $secondary-font;
+      font-family: $font_montserrat;
     }
 
     .contact-header {
-      font-family: $tertiary-font;
+      font-family: $font_raleway;
+    }
+
+    .main-footer-copyright {
+      font-family: $font_montserrat;
     }
   }
 </style>
