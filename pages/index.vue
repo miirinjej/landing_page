@@ -24,13 +24,17 @@
                 mobile device such as a phone/tablet or watch.
               </p>
               <div class="home-promo-download">
-                <button class="home-promo-download-appstore-button button">
+                <button class="home-promo-download-button button">
                   Get It From
-                  Appstore
+                  <span class="home-promo-download-store">
+                    Appstore
+                  </span>
                 </button>
-                <button class="home-promo-download-playstore-button button">
+                <button class="home-promo-download-button button">
                   Get It From
-                  Playstore
+                  <span class="home-promo-download-store">
+                    Playstore
+                  </span>
                 </button>
               </div>
             </div>
@@ -455,4 +459,17 @@
 </script>
 
 <style lang="scss">
+  @media only screen {
+    .home-promo-download-button-store {
+      font-family: $secondary-font;
+    }
+
+    .main-footer-copyright {
+      font-family: $secondary-font;
+    }
+
+    .contact-header {
+      font-family: $tertiary-font;
+    }
+  }
 </style>

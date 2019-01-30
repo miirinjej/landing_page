@@ -15,12 +15,20 @@
   };
 </script>
 
-<style>
+<style lang="scss">
   html {
     box-sizing: border-box;
-    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 100%;
+  }
+
+  body {
+    font: 1.25em/1.25 $primary-font;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: $secondary-font;
   }
 
   *,
