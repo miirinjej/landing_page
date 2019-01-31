@@ -23,6 +23,8 @@
 
   body {
     font: 1.25em/1.25 $content_font;
+    color: $content_primary_color;
+    background: $background_primary_color;
   }
 
   h1,
