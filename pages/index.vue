@@ -459,17 +459,15 @@
 </script>
 
 <style lang="scss">
-  @media only screen {
-    .home-promo-download-button-store {
-      font-family: $font_montserrat;
-    }
+  .home-promo-download-button-store {
+    font-family: $font_montserrat;
+  }
 
-    .contact-header {
-      font-family: $font_raleway;
-    }
+  .contact-header {
+    font-family: $font_raleway;
+  }
 
-    .main-footer-copyright {
-      font-family: $font_montserrat;
-    }
+  .main-footer-copyright {
+    font-family: $font_montserrat;
   }
 </style>
