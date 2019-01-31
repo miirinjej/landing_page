@@ -1,13 +1,15 @@
 <template>
   <div class="navbar">
-    <div class="l-columns-3">
-      <div class="navbar-brand-name">
-        UIXREX
+    <div class="l-navbar">
+      <div class="l-row">
+        <div class="navbar-brand-name">
+          UIXREX
+        </div>
+        <main-menu :items="menuItems" />
+        <button class="navbar-try-for-free-button button">
+          Try for free
+        </button>
       </div>
-      <main-menu :items="menuItems" />
-      <button class="navbar-try-for-free-button button">
-        Try for free
-      </button>
     </div>
   </div>
 </template>

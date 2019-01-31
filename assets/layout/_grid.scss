@@ -1,0 +1,33 @@
+%flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.l-container {
+  @extend %flex_column;
+  justify-content: center;
+  text-align: center;
+}
+
+.l-navbar,
+.l-header,
+.l-content,
+.l-footer {
+  @extend %flex_column;
+  padding: 0 19.53125%;
+}
+
+.l-header {
+  text-align: right;
+}
+
+.l-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.l-col {
+  @extend %flex_column;
+  align-items: center;
+}
