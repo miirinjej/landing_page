@@ -97,7 +97,10 @@ module.exports = {
   ** Style resources
   */
   styleResources: {
-    scss: './assets/vars/*.scss',
+    scss: [
+      '~/assets/layout/*.scss',
+      '~/assets/vars/*.scss',
+    ],
   },
 
   /*
