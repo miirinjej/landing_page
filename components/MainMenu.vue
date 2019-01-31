@@ -7,7 +7,7 @@
         class="main-menu-list-item"
       >
         <a
-          class="main-menu-list-item-link"
+          class="main-menu-link"
           :href="`#${item.name.toLowerCase()}`"
         >
           {{ item.name }}
@@ -41,4 +41,33 @@
 </script>
 
 <style lang="scss" scoped>
+  .main-menu {
+    display: inline-block;
+    height: 100%;
+  }
+
+  .main-menu-list {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0;
+    list-style: none;
+    user-select: none;
+  }
+
+  .main-menu-list-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-menu-list-item:not(:last-of-type) {
+    margin-right: 2.25rem;
+  }
+
+  .main-menu-link {
+    color: $main_menu_link_color;
+    text-decoration: none;
+  }
 </style>
