@@ -459,6 +459,14 @@
 </script>
 
 <style lang="scss">
+  .home {
+    background: $background_primary_color url("/background/home.svg") 0 0 no-repeat;
+  }
+
+  .features {
+    background: $background_primary_color url("/background/features.svg") 0 0 no-repeat;
+  }
+
   .home-promo-download-button-store {
     font-family: $font_montserrat;
   }
