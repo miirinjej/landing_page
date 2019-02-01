@@ -5,42 +5,55 @@
       class="home main-header"
     >
       <div class="l-header">
-        <carousel class="home-carousel">
-          <slide class="home-carousel-slide">
-            <div class="l-row">
-              <figure class="home-carousel-slide-figure">
-                <img
-                  class="home-carousel-slide-figure-image"
-                  alt=""
-                >
-              </figure>
-              <div class="home-promo">
-                <h1 class="home-promo-header">
-                  The Best App to Increase
-                  Your Productivity
-                </h1>
-                <p class="home-promo-description">
-                  A mobile app is a computer program designed to run on a
-                  mobile device such as a phone/tablet or watch.
-                </p>
-                <div class="home-promo-download">
-                  <button class="home-promo-download-button button">
+        <div class="l-row">
+          <figure class="home-figure">
+            <img
+              class="home-figure-image"
+              src="/home/phone.png"
+              alt="phone"
+            >
+          </figure>
+          <div class="home-promo">
+            <h1 class="home-promo-header">
+              The Best App to Increase
+              Your Productivity
+            </h1>
+            <p class="home-promo-description">
+              A mobile app is a computer program designed to run on a
+              mobile device such as a phone/tablet or watch.
+            </p>
+            <div class="home-promo-download">
+              <button class="home-promo-download-button button">
+                <span class="l-row">
+                  <fa
+                    class="home-promo-download-button-icon"
+                    :icon="['fab', 'apple']"
+                  />
+                  <span class="home-promo-download-button-text">
                     Get It From
-                    <span class="home-promo-download-store">
+                    <span class="home-promo-download-button-text-store">
                       Appstore
                     </span>
-                  </button>
-                  <button class="home-promo-download-button button">
+                  </span>
+                </span>
+              </button>
+              <button class="home-promo-download-button button">
+                <span class="l-row">
+                  <fa
+                    class="home-promo-download-button-icon"
+                    :icon="['fab', 'google-play']"
+                  />
+                  <span class="home-promo-download-button-text">
                     Get It From
-                    <span class="home-promo-download-store">
+                    <span class="home-promo-download-button-text-store">
                       Playstore
                     </span>
-                  </button>
-                </div>
-              </div>
+                  </span>
+                </span>
+              </button>
             </div>
-          </slide>
-        </carousel>
+          </div>
+        </div>
       </div>
     </header>
     <section
@@ -500,15 +513,60 @@
 
 <style lang="scss">
   .home {
+    margin-bottom: 2.1875rem;
     background: $background_primary_color url("/background/home.svg") 0 0 no-repeat;
+  }
+
+  .home-figure {
+    margin-top: 9.0625rem;
+
+    /* dirty hack, because image layers is merged */
+    margin-left: -6.5625rem;
+  }
+
+  .home-promo-header {
+    font-size: $font_size_46;
+    font-weight: 600;
+    color: $header_secondary_color;
+  }
+
+  .home-promo-description {
+    color: $content_secondary_color;
+  }
+
+  .home-promo-download {
+    margin-top: 5.3125rem;
+  }
+
+  .home-promo-download-button {
+    width: 14.375rem;
+    padding: 0 2.75rem;
+    font-size: $font_size_13;
+    color: $content_secondary_color;
+    background: $download_button_background_color;
+  }
+
+  .home-promo-download-button:not(:last-of-type) {
+    margin-right: 1.125rem;
+  }
+
+  .home-promo-download-button-icon {
+    font-size: $font_size_32;
+  }
+
+  .home-promo-download-button-text {
+    text-align: left;
+    @extend %flex_column;
+  }
+
+  .home-promo-download-button-text-store {
+    font-family: $font_montserrat;
+    font-size: $font_size_19;
+    font-weight: 600;
   }
 
   .features {
     background: $background_primary_color url("/background/features.svg") 0 0 no-repeat;
-  }
-
-  .home-promo-download-button-store {
-    font-family: $font_montserrat;
   }
 
   .contact-header {
