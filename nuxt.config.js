@@ -98,8 +98,9 @@ module.exports = {
   */
   styleResources: {
     scss: [
+      '~/assets/base/*.scss',
       '~/assets/layout/*.scss',
-      '~/assets/vars/*.scss',
+      '~/assets/themes/*.scss',
     ],
   },
 
