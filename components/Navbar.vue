@@ -38,4 +38,22 @@
 </script>
 
 <style lang="scss" scoped>
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 3.875rem;
+  }
+
+  .navbar-brand-name {
+    font-size: $font_size_34;
+    font-weight: 600;
+    color: $content_secondary_color;
+  }
+
+  .navbar-try-for-free-button {
+    font-size: $font_size_25;
+    color: $content_tertiary_color;
+    background: $try_for_free_button_background_color;
+  }
 </style>
