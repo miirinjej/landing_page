@@ -30,7 +30,6 @@
           { name: 'Features' },
           { name: 'Pricing' },
           { name: 'Screenshot' },
-          { name: 'Reviews' },
           { name: 'Contact' },
         ],
       };
