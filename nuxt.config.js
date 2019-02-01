@@ -81,7 +81,6 @@ module.exports = {
             'faLongArrowAltLeft',
             'faQuoteLeft',
             'faQuoteRight',
-            'faSquare',
             'faTimes',
             'faMap',
             'faPhone',

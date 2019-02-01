@@ -33,6 +33,17 @@
     font-family: $header_font;
   }
 
+  h2 {
+    margin-bottom: 2.55rem;
+    font-size: $font_size_36;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: $font_size_24;
+    color: $color_scorpion_dark;
+  }
+
   *,
   *::before,
   *::after {

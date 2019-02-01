@@ -65,14 +65,18 @@
           About The App
         </h2>
         <p class="about-description">
-          Writers and stars of Veep have responded incredulously to the news an Australian politician
+          Writers and stars of Veep have responded incredulously to the news an Australian politician<br>
           required preinstalled stitches way email client, calendar, mapping program.
         </p>
         <div class="l-row">
           <div class="about-card">
             <div class="l-col">
               <figure class="about-card-figure">
-                <fa icon="" />
+                <div class="about-card-figure-rhombus"></div>
+                <fa
+                  class="about-card-figure-icon"
+                  icon="headset"
+                />
               </figure>
               <h3 class="about-card-header">
                 24/7 Support
@@ -85,7 +89,11 @@
           <div class="about-card">
             <div class="l-col">
               <figure class="about-card-figure">
-                <fa icon="" />
+                <div class="about-card-figure-rhombus"></div>
+                <fa
+                  class="about-card-figure-icon"
+                  icon="lock"
+                />
               </figure>
               <h3 class="about-card-header">
                 Data Privacy
@@ -98,7 +106,11 @@
           <div class="about-card">
             <div class="l-col">
               <figure class="about-card-figure">
-                <fa icon="" />
+                <div class="about-card-figure-rhombus"></div>
+                <fa
+                  class="about-card-figure-icon"
+                  icon="download"
+                />
               </figure>
               <h3 class="about-card-header">
                 Easy Download
@@ -563,6 +575,73 @@
     font-family: $font_montserrat;
     font-size: $font_size_19;
     font-weight: 600;
+  }
+
+  .about {
+    margin-bottom: 5.625rem;
+  }
+
+  .about-header,
+  .pricing-header,
+  .screenshot-header {
+    color: $header_primary_color;
+  }
+
+  .about-description {
+    margin-bottom: 4.5em;
+  }
+
+  .about-card {
+    width: 22.375rem;
+    height: 24.4375rem;
+    padding: 3.4375rem 2rem;
+    box-shadow: 1px 2px 1.25rem 1px rgba(34, 31, 31, 0.2);
+  }
+
+  .about-card-figure {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 4.25rem;
+    height: 4.25rem;
+    margin-bottom: 2.625rem;
+  }
+
+  .about-card-figure-rhombus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: $rhombus_background_primary_color;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .about-card-figure-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: $font_size_32;
+    color: $icon_secondary_color;
+    transform: translate(-50%, -50%);
+  }
+
+  .about-card-header {
+    margin-bottom: 1.66666666666em;
+  }
+
+  .about-card:nth-of-type(2) {
+    .about-card-figure-rhombus {
+      background: $rhombus_background_secondary_color;
+    }
+
+    .about-card-figure-icon {
+      color: $icon_primary_color;
+    }
+
+    .about-card-header {
+      color: $content_tertiary_color;
+    }
   }
 
   .features {
