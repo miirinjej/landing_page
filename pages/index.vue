@@ -139,7 +139,8 @@
           <figure class="features-figure">
             <img
               class="features-figure-image"
-              alt=""
+              src="/features/hero.png"
+              alt="hero"
             >
           </figure>
           <ul class="features-list">
@@ -526,6 +527,7 @@
 <style lang="scss">
   .home {
     margin-bottom: 2.1875rem;
+    color: $content_secondary_color;
     background: $background_primary_color url("/background/home.svg") 0 0 no-repeat;
   }
 
@@ -539,11 +541,6 @@
   .home-promo-header {
     font-size: $font_size_46;
     font-weight: 600;
-    color: $header_secondary_color;
-  }
-
-  .home-promo-description {
-    color: $content_secondary_color;
   }
 
   .home-promo-download {
@@ -593,8 +590,9 @@
 
   .about-card {
     width: 22.375rem;
-    height: 24.4375rem;
-    padding: 3.4375rem 2rem;
+    padding: 3.4375rem 2rem 3.625rem 2rem;
+    font-size: $font_size_16;
+    line-height: 1.875;
     box-shadow: 1px 2px 1.25rem 1px rgba(34, 31, 31, 0.2);
   }
 
