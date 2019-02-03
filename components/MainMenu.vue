@@ -50,9 +50,8 @@
     display: flex;
     justify-content: space-between;
     height: 100%;
-    padding: 0;
-    list-style: none;
     user-select: none;
+    @extend %list_style;
   }
 
   .main-menu-list-item {

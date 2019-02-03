@@ -36,7 +36,6 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/fa-layers',
   ],
 
   /*
@@ -62,8 +61,7 @@ module.exports = {
         {
           set: '@fortawesome/free-regular-svg-icons',
           icons: [
-            'faCircle',
-            'faThumbsUp',
+            'faHandPointUp',
           ],
         },
         {
@@ -101,6 +99,7 @@ module.exports = {
       '~/assets/components/*.scss',
       '~/assets/layout/*.scss',
       '~/assets/themes/*.scss',
+      '~/assets/main.scss',
     ],
   },
 

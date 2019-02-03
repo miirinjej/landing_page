@@ -132,7 +132,7 @@
           Features The App
         </h2>
         <p class="features-description">
-          Writers and stars of Veep have responded incredulously to the news an Australian politician
+          Writers and stars of Veep have responded incredulously to the news an Australian politician<br>
           required preinstalled stitches way email client, calendar, mapping program.
         </p>
         <div class="l-row">
@@ -145,40 +145,84 @@
           </figure>
           <ul class="features-list">
             <li class="features-list-item">
-              <h3 class="features-list-item-header">
-                Creative design
-              </h3>
-              <p class="features-list-item-description">
-                Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another projects
-                managed with a easy design is what we stand for.incididunt ugt labore.
-              </p>
+              <div class="l-row">
+                <div class="features-list-item-circle">
+                  <fa
+                    class="features-list-item-circle-icon"
+                    icon="layer-group"
+                  />
+                </div>
+                <div>
+                  <h3 class="features-list-item-header">
+                    Creative design
+                  </h3>
+                  <p class="features-list-item-description">
+                    Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another
+                    projects
+                    managed with a easy design is what we stand for.incididunt ugt labore.
+                  </p>
+                </div>
+              </div>
             </li>
             <li class="features-list-item">
-              <h3 class="features-list-item-header">
-                Unlimited features
-              </h3>
-              <p class="features-list-item-description">
-                Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another projects
-                managed with a easy design is what we stand for.incididunt ugt labore.
-              </p>
+              <div class="l-row">
+                <div class="features-list-item-circle">
+                  <fa
+                    class="features-list-item-circle-icon"
+                    icon="ellipsis-h"
+                  />
+                </div>
+                <div>
+                  <h3 class="features-list-item-header">
+                    Unlimited features
+                  </h3>
+                  <p class="features-list-item-description">
+                    Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another
+                    projects
+                    managed with a easy design is what we stand for.incididunt ugt labore.
+                  </p>
+                </div>
+              </div>
             </li>
             <li class="features-list-item">
-              <h3 class="features-list-item-header">
-                User friendly
-              </h3>
-              <p class="features-list-item-description">
-                Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another projects
-                managed with a easy design is what we stand for.incididunt ugt labore.
-              </p>
+              <div class="l-row">
+                <div class="features-list-item-circle">
+                  <fa
+                    class="features-list-item-circle-icon"
+                    :icon="['far', 'hand-point-up']"
+                  />
+                </div>
+                <div>
+                  <h3 class="features-list-item-header">
+                    User friendly
+                  </h3>
+                  <p class="features-list-item-description">
+                    Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another
+                    projects
+                    managed with a easy design is what we stand for.incididunt ugt labore.
+                  </p>
+                </div>
+              </div>
             </li>
             <li class="features-list-item">
-              <h3 class="features-list-item-header">
-                Clean codes
-              </h3>
-              <p class="features-list-item-description">
-                Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another projects
-                managed with a easy design is what we stand for.incididunt ugt labore.
-              </p>
+              <div class="l-row">
+                <div class="features-list-item-circle">
+                  <fa
+                    class="features-list-item-circle-icon"
+                    icon="code"
+                  />
+                </div>
+                <div>
+                  <h3 class="features-list-item-header">
+                    Clean codes
+                  </h3>
+                  <p class="features-list-item-description">
+                    Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another
+                    projects
+                    managed with a easy design is what we stand for.incididunt ugt labore.
+                  </p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -193,7 +237,7 @@
           Pricing Plan
         </h2>
         <p class="pricing-description">
-          Writers and stars of Veep have responded incredulously to the news an Australian politician
+          Writers and stars of Veep have responded incredulously to the news an Australian politician<br>
           required preinstalled stitches way email client, calendar, mapping program.
         </p>
         <div class="l-row">
@@ -643,7 +687,63 @@
   }
 
   .features {
+    padding-top: 5.5625rem;
+    padding-bottom: 22.375rem;
+    color: $content_secondary_color;
     background: $background_primary_color url("/background/features.svg") 0 0 no-repeat;
+  }
+
+  .features {
+    .l-row {
+      align-items: flex-start;
+    }
+  }
+
+  .features-description {
+    margin-bottom: 6.1875rem;
+  }
+
+  .features-list {
+    text-align: left;
+    @extend %list_style;
+  }
+
+  .features-list-item {
+    line-height: 1.875;
+  }
+
+  .features-list-item:not(:last-of-type) {
+    margin-bottom: 4.5rem;
+  }
+
+  .features-list-item-circle {
+    position: relative;
+    width: 4.875rem;
+    height: 4.875rem;
+    margin-right: 2.375rem;
+    background: $circle_background_color;
+    border-radius: 50%;
+  }
+
+  .features-list-item-circle-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: $font_size_36;
+    color: $icon_secondary_color;
+    transform: translate(-50%, -50%);
+  }
+
+  .features-list-item-header {
+    margin-bottom: 1em;
+    font-size: $font_size_20;
+    color: $header_secondary_color;
+    text-transform: uppercase;
+  }
+
+  .features-list-item-description {
+    width: 34.625rem;
+    font-size: $font_size_16;
   }
 
   .contact-header {
