@@ -396,24 +396,47 @@
         App Screenshots
       </h2>
       <p class="screenshot-description">
-        Most such devices are sold with several apps bundled as pre-installed software,
+        Most such devices are sold with several apps bundled as pre-installed software,<br>
         such as a web browser, email client, calendar, mapping program.
       </p>
-      <carousel class="screenshot-carousel">
-        <slide class="screenshot-carousel-slide">
-          <figure class="screenshot-carousel-slide-figure">
-            <img
-              class="screenshot-carousel-slide-figure-image"
-              src=""
-              alt=""
-            >
-          </figure>
-        </slide>
+      <no-ssr placeholder="Loading...">
+        <carousel
+          class="screenshot-carousel"
+          :per-page-custom="[[1920, 5]]"
+          :autoplay="true"
+          :autoplay-timeout="5000"
+          :loop="true"
+          :pagination-enabled="false"
+        >
+          <slide
+            v-for="(screenshot, index) in screenshots"
+            :key="index"
+            class="screenshot-carousel-slide"
+          >
+            <figure class="screenshot-carousel-slide-figure">
+              <img
+                class="screenshot-carousel-slide-figure-image"
+                :src="screenshot.url"
+                :alt="screenshot.name"
+              >
+            </figure>
+          </slide>
+        </carousel>
         <div class="screenshot-carousel-navigation">
-          <button class="screenshot-carousel-navigation-previous-button"></button>
-          <button class="screenshot-carousel-navigation-next-button"></button>
+          <button class="screenshot-carousel-navigation-button circle-button">
+            <fa
+              class="screenshot-carousel-navigation-button-icon"
+              icon="long-arrow-alt-left"
+            />
+          </button>
+          <button class="screenshot-carousel-navigation-button circle-button">
+            <fa
+              class="screenshot-carousel-navigation-button-icon"
+              icon="long-arrow-alt-right"
+            />
+          </button>
         </div>
-      </carousel>
+      </no-ssr>
     </section>
     <section
       id="reviews"
@@ -609,6 +632,19 @@
 <script>
   export default {
     components: {
+    },
+    data() {
+      return {
+        screenshots: [
+          { name: 'workout', url: '/screenshot/workout.png' },
+          { name: 'story', url: '/screenshot/story.png' },
+          { name: 'map', url: '/screenshot/map.png' },
+          { name: 'music player', url: '/screenshot/music_player.png' },
+          { name: 'login', url: '/screenshot/login.png' },
+          { name: 'story 2', url: '/screenshot/story_2.png' },
+          { name: 'map 2', url: '/screenshot/map_2.png' },
+        ],
+      };
     },
   };
 </script>
@@ -886,6 +922,29 @@
       background: $purchase_button_background_secondary_color;
       border-color: $purchase_button_border_secondary_color;
     }
+  }
+
+  .screenshot {
+    padding-top: 4.75rem;
+    padding-bottom: 5.625rem;
+  }
+
+  .screenshot-description {
+    margin-bottom: 5.625rem;
+  }
+
+  .screenshot-carousel {
+    margin-bottom: 3.0625rem;
+  }
+
+  .screenshot-carousel-navigation-button {
+    font-size: $font_size_28;
+    color: $icon_primary_color;
+    background: $navigation_button_background_color;
+  }
+
+  .screenshot-carousel-navigation-button:first-child {
+    margin-right: 3.3125rem;
   }
 
   .contact-header {
