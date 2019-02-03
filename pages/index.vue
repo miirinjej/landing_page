@@ -254,19 +254,34 @@
               </div>
               <ul class="pricing-card-list">
                 <li class="pricing-card-list-item">
-                  100 MB Disk Space
+                  <fa
+                    class="pricing-card-list-item-icon check-icon"
+                    icon="check"
+                  />100 MB Disk Space
                 </li>
                 <li class="pricing-card-list-item">
-                  2 Subdomains
+                  <fa
+                    class="pricing-card-list-item-icon check-icon"
+                    icon="check"
+                  />2 Subdomains
                 </li>
                 <li class="pricing-card-list-item">
-                  5 Email Accounts
+                  <fa
+                    class="pricing-card-list-item-icon check-icon"
+                    icon="check"
+                  />5 Email Accounts
                 </li>
                 <li class="pricing-card-list-item">
-                  No License
+                  <fa
+                    class="pricing-card-list-item-icon times-icon"
+                    icon="times"
+                  />No License
                 </li>
                 <li class="pricing-card-list-item">
-                  Phone & Mail Support
+                  <fa
+                    class="pricing-card-list-item-icon times-icon"
+                    icon="times"
+                  />Phone & Mail Support
                 </li>
               </ul>
               <button class="pricing-card-purchase-button button">
@@ -287,19 +302,34 @@
               </div>
               <ul class="pricing-card-list">
                 <li class="pricing-card-list-item">
-                  100 MB Disk Space
+                  <fa
+                    class="pricing-card-list-item-icon check-icon"
+                    icon="check"
+                  />100 MB Disk Space
                 </li>
                 <li class="pricing-card-list-item">
-                  2 Subdomains
+                  <fa
+                    class="pricing-card-list-item-icon check-icon"
+                    icon="check"
+                  />2 Subdomains
                 </li>
                 <li class="pricing-card-list-item">
-                  5 Email Accounts
+                  <fa
+                    class="pricing-card-list-item-icon check-icon"
+                    icon="check"
+                  />5 Email Accounts
                 </li>
                 <li class="pricing-card-list-item">
-                  No License
+                  <fa
+                    class="pricing-card-list-item-icon check-icon"
+                    icon="check"
+                  />No License
                 </li>
                 <li class="pricing-card-list-item">
-                  Phone & Mail Support
+                  <fa
+                    class="pricing-card-list-item-icon times-icon"
+                    icon="times"
+                  />Phone & Mail Support
                 </li>
               </ul>
               <button class="pricing-card-purchase-button button">
@@ -320,19 +350,34 @@
               </div>
               <ul class="pricing-card-list">
                 <li class="pricing-card-list-item">
-                  100 MB Disk Space
+                  <fa
+                    class="pricing-card-list-item-icon check-icon"
+                    icon="check"
+                  />100 MB Disk Space
                 </li>
                 <li class="pricing-card-list-item">
-                  2 Subdomains
+                  <fa
+                    class="pricing-card-list-item-icon check-icon"
+                    icon="check"
+                  />2 Subdomains
                 </li>
                 <li class="pricing-card-list-item">
-                  5 Email Accounts
+                  <fa
+                    class="pricing-card-list-item-icon check-icon"
+                    icon="check"
+                  />5 Email Accounts
                 </li>
                 <li class="pricing-card-list-item">
-                  No License
+                  <fa
+                    class="pricing-card-list-item-icon check-icon"
+                    icon="check"
+                  />No License
                 </li>
                 <li class="pricing-card-list-item">
-                  Phone & Mail Support
+                  <fa
+                    class="pricing-card-list-item-icon check-icon"
+                    icon="check"
+                  />Phone & Mail Support
                 </li>
               </ul>
               <button class="pricing-card-purchase-button button">
@@ -593,10 +638,12 @@
 
   .home-promo-download-button {
     width: 14.375rem;
+    height: 5.0625rem;
     padding: 0 2.75rem;
     font-size: $font_size_13;
     color: $content_secondary_color;
     background: $download_button_background_color;
+    border-radius: 2.5rem;
   }
 
   .home-promo-download-button:not(:last-of-type) {
@@ -629,7 +676,7 @@
   }
 
   .about-description {
-    margin-bottom: 4.5em;
+    margin-bottom: 5.625rem;
   }
 
   .about-card {
@@ -744,6 +791,101 @@
   .features-list-item-description {
     width: 34.625rem;
     font-size: $font_size_16;
+  }
+
+  .pricing {
+    padding: 5.4375rem 0;
+    background: $background_secondary_color;
+  }
+
+  .pricing-description {
+    margin-bottom: 7.1875rem;
+  }
+
+  .pricing-card {
+    width: 22.875rem;
+    padding: 2.5625rem 0;
+    border: 2px solid $pricing_card_border_color;
+    border-radius: 1.25rem;
+    box-shadow: 1px 2px 0.375rem 1px rgba(34, 31, 31, 0.24);
+  }
+
+  .pricing-card-header {
+    margin-bottom: 1.5em;
+    font-size: $font_size_24;
+  }
+
+  .pricing-card-cost {
+    margin-bottom: 2.25rem;
+    font-size: $font_size_36;
+    line-height: 1;
+    color: $content_tertiary_color;
+  }
+
+  .pricing-card-access {
+    margin-bottom: 2.9375rem;
+    font-size: $font_size_18;
+    font-weight: 600;
+    line-height: 1;
+    color: $header_primary_color;
+  }
+
+  .pricing-card-list {
+    margin-bottom: 2.1875rem;
+    font-size: $font_size_14;
+    line-height: 2.57142857142;
+    @extend %list_style;
+  }
+
+  .pricing-card-list-item-icon {
+    margin-right: 0.375rem;
+  }
+
+  .pricing-card-list-item-icon.check-icon {
+    color: $available_option_primary_color;
+  }
+
+  .pricing-card-list-item-icon.times-icon {
+    color: $unavailable_option_color;
+  }
+
+  .pricing-card-purchase-button {
+    width: 12.8125rem;
+    height: 3.4375rem;
+    font-size: $font_size_18;
+    font-weight: 500;
+    color: $content_tertiary_color;
+    text-transform: uppercase;
+    background: $purchase_button_background_primary_color;
+    border: 2px solid $purchase_button_border_primary_color;
+  }
+
+  .pricing-card:nth-of-type(2) {
+    height: 38.6609375rem;
+    padding: 4.35078125rem 0;
+    color: $content_secondary_color;
+    background: linear-gradient(to right, #1a62d8, #3a83f3);
+
+    .pricing-card-header {
+      color: $header_secondary_color;
+    }
+
+    .pricing-card-cost {
+      color: $content_secondary_color;
+    }
+
+    .pricing-card-access {
+      color: $content_secondary_color;
+    }
+
+    .pricing-card-list-item-icon.check-icon {
+      color: $available_option_secondary_color;
+    }
+
+    .pricing-card-purchase-button {
+      background: $purchase_button_background_secondary_color;
+      border-color: $purchase_button_border_secondary_color;
+    }
   }
 
   .contact-header {
