@@ -401,6 +401,7 @@
       </p>
       <no-ssr placeholder="Loading...">
         <carousel
+          ref="screenshotsCarousel"
           class="screenshot-carousel"
           :per-page-custom="[[1920, 5]]"
           :autoplay="true"
@@ -423,13 +424,19 @@
           </slide>
         </carousel>
         <div class="screenshot-carousel-navigation">
-          <button class="screenshot-carousel-navigation-button circle-button">
+          <button
+            class="screenshot-carousel-navigation-button circle-button"
+            @click="slideCarousel('prev')"
+          >
             <fa
               class="screenshot-carousel-navigation-button-icon"
               icon="long-arrow-alt-left"
             />
           </button>
-          <button class="screenshot-carousel-navigation-button circle-button">
+          <button
+            class="screenshot-carousel-navigation-button circle-button"
+            @click="slideCarousel('next')"
+          >
             <fa
               class="screenshot-carousel-navigation-button-icon"
               icon="long-arrow-alt-right"
@@ -645,6 +652,19 @@
           { name: 'map 2', url: '/screenshot/map_2.png' },
         ],
       };
+    },
+    methods: {
+      slideCarousel(value) {
+        const carousel = this.$refs.screenshotsCarousel;
+        const currentPage = carousel.currentPage;
+        const pageCount = carousel.pageCount;
+
+        if (value === 'prev') {
+          currentPage !== 0 ? carousel.goToPage(currentPage - 1) : carousel.goToPage(pageCount - 1);
+        } else {
+          currentPage < pageCount - 1 ? carousel.goToPage(currentPage + 1) : carousel.goToPage(0);
+        }
+      },
     },
   };
 </script>
