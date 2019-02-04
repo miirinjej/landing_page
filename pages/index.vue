@@ -426,7 +426,7 @@
         <div class="screenshot-carousel-navigation">
           <button
             class="screenshot-carousel-navigation-button circle-button"
-            @click="slideCarousel('prev')"
+            @click="slideScreenshotsCarousel('prev')"
           >
             <fa
               class="screenshot-carousel-navigation-button-icon"
@@ -435,7 +435,7 @@
           </button>
           <button
             class="screenshot-carousel-navigation-button circle-button"
-            @click="slideCarousel('next')"
+            @click="slideScreenshotsCarousel('next')"
           >
             <fa
               class="screenshot-carousel-navigation-button-icon"
@@ -453,49 +453,50 @@
         <h2 class="reviews-header">
           Some Talk of Our Clients
         </h2>
-        <carousel class="reviews-carousel">
-          <slide class="reviews-carousel-slide">
-            <div class="l-col">
-              <figure class="reviews-carousel-slide-figure">
+        <carousel
+          ref="reviewsCarousel"
+          class="reviews-carousel"
+          :per-page-custom="[[1920, 2]]"
+          :loop="true"
+          :pagination-enabled="true"
+          :space-padding="0"
+          :pagination-active-color="'#cbd9f1'"
+          :pagination-color="'#90b4ee'"
+          :pagination-padding="6"
+          :pagination-size="15"
+        >
+          <slide
+            v-for="(review, index) in reviews"
+            :key="index"
+            class="reviews-carousel-slide"
+          >
+            <div class="reviews-carousel-slide-content">
+              <figure class="reviews-carousel-slide-content-figure">
                 <img
-                  class="reviews-carousel-slide-figure-image"
-                  src=""
-                  alt=""
+                  class="reviews-carousel-slide-content-figure-image"
+                  :src="review.imageUrl"
+                  :alt="review.author"
                 >
               </figure>
-              <div class="reviews-carousel-slide-name">
-                Oliver Gomez
+              <div class="reviews-carousel-slide-content-name">
+                {{ review.author }}
               </div>
-              <div class="reviews-carousel-slide-position">
-                CEO of google
+              <div class="reviews-carousel-slide-content-position">
+                {{ review.position }}
               </div>
-              <fa icon="" />
-              <span class="reviews-carousel-slide-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores cum dolore earum est et excepturi, inventore maxime molestias nihil non praesentium quae, qui sed tempora veniam veritatis vero voluptatibus.
-              </span>
-              <fa icon="" />
-            </div>
-          </slide>
-          <slide class="reviews-carousel-slide">
-            <div class="l-col">
-              <figure class="reviews-carousel-slide-figure">
-                <img
-                  class="reviews-carousel-slide-figure-image"
-                  src=""
-                  alt=""
-                >
-              </figure>
-              <div class="reviews-carousel-slide-name">
-                Rita Watson
+              <div class="l-row">
+                <fa
+                  class="reviews-carousel-slide-content-icon quote-left-icon"
+                  icon="quote-left"
+                />
+                <span class="reviews-carousel-slide-content-text">
+                  {{ review.reviewText }}
+                  <fa
+                    class="reviews-carousel-slide-content-icon quote-right-icon"
+                    icon="quote-right"
+                  />
+                </span>
               </div>
-              <div class="reviews-carousel-slide-position">
-                Web Designer
-              </div>
-              <fa icon="" />
-              <span class="reviews-carousel-slide-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores cum dolore earum est et excepturi, inventore maxime molestias nihil non praesentium quae, qui sed tempora veniam veritatis vero voluptatibus.
-              </span>
-              <fa icon="" />
             </div>
           </slide>
         </carousel>
@@ -651,10 +652,54 @@
           { name: 'story 2', url: '/screenshot/story_2.png' },
           { name: 'map 2', url: '/screenshot/map_2.png' },
         ],
+        reviews: [
+          {
+            imageUrl: '/reviews/james_santana.png',
+            author: 'James Santana',
+            position: 'Web Developer',
+            reviewText:
+              'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
+          },
+          {
+            imageUrl: '/reviews/julia_green.png',
+            author: 'Julia Green',
+            position: 'Web Designer',
+            reviewText:
+              'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
+          },
+          {
+            imageUrl: '/reviews/oliver_gomez.png',
+            author: 'Oliver Gomez',
+            position: 'CEO of google',
+            reviewText:
+              'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
+          },
+          {
+            imageUrl: '/reviews/rita_watson.png',
+            author: 'Rita Watson',
+            position: 'Web Designer',
+            reviewText:
+              'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
+          },
+          {
+            imageUrl: '/reviews/monica_flower.png',
+            author: 'Monica Flower',
+            position: 'Marketer',
+            reviewText:
+              'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
+          },
+          {
+            imageUrl: '/reviews/sarah_april.png',
+            author: 'Sarah April',
+            position: 'IT manager',
+            reviewText:
+              'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
+          },
+        ],
       };
     },
     methods: {
-      slideCarousel(value) {
+      slideScreenshotsCarousel(value) {
         const carousel = this.$refs.screenshotsCarousel;
         const currentPage = carousel.currentPage;
         const pageCount = carousel.pageCount;
@@ -920,7 +965,7 @@
     height: 38.6609375rem;
     padding: 4.35078125rem 0;
     color: $content_secondary_color;
-    background: linear-gradient(to right, #1a62d8, #3a83f3);
+    background: linear-gradient(to right, $color_denim, $color_dodger_blue_primary);
 
     .pricing-card-header {
       color: $header_secondary_color;
@@ -965,6 +1010,89 @@
 
   .screenshot-carousel-navigation-button:first-child {
     margin-right: 3.3125rem;
+  }
+
+  .reviews {
+    padding: 5.625rem 0 5.375rem 0;
+    margin-bottom: 5.625rem;
+    color: $content_secondary_color;
+    background-image: linear-gradient(-110deg, $color_dodger_blue_primary, $color_denim);
+  }
+
+  .reviews-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reviews-carousel-slide {
+    justify-content: flex-end;
+    height: 21.9375rem;
+    @extend %flex_column;
+  }
+
+  .reviews-carousel-slide:nth-child(even) {
+    margin-left: 1.25rem;
+  }
+
+  .reviews-carousel-slide:nth-child(2n+3) {
+    margin-left: -1.25rem;
+  }
+
+  .reviews-carousel-slide-content {
+    position: relative;
+    align-items: center;
+    width: 35rem;
+    height: 17.3125rem;
+    padding: 3rem 4.6875rem 2.3125rem 4.6875rem;
+    border: 1px solid $reviews_slide_border_color;
+    @extend %flex_column;
+  }
+
+  .reviews-carousel-slide-content-figure {
+    position: absolute;
+    top: -4.625rem;
+  }
+
+  .reviews-carousel-slide-content-figure-image {
+    width: 7.625rem;
+    height: 7.625rem;
+    border: 2px solid $reviews_slide_figure_border_color;
+    border-radius: 50%;
+  }
+
+  .reviews-carousel-slide-content-name {
+    font-size: $font_size_18;
+    font-weight: 600;
+    line-height: 2;
+  }
+
+  .reviews-carousel-slide-content-position {
+    margin-bottom: 1.625rem;
+    font-size: $font_size_14;
+  }
+
+  .reviews-carousel-slide-content {
+    .l-row {
+      align-items: flex-start;
+    }
+  }
+
+  .reviews-carousel-slide-content-icon {
+    font-size: $font_size_27;
+  }
+
+  .reviews-carousel-slide-content-text {
+    font-size: $font_size_15;
+    text-align: justify;
+  }
+
+  .reviews-carousel-slide-content-icon.quote-left-icon {
+    margin-right: 1.0625rem;
+  }
+
+  .reviews-carousel .VueCarousel-wrapper {
+    margin-bottom: 1.25rem;
   }
 
   .contact-header {
