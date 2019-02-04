@@ -728,6 +728,10 @@
     margin-left: -6.5625rem;
   }
 
+  .home-promo {
+    width: 37.5rem;
+  }
+
   .home-promo-header {
     font-size: $font_size_46;
     font-weight: 600;
