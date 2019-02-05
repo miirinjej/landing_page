@@ -821,7 +821,7 @@
   }
 
   .about-card-header {
-    margin-bottom: 1.66666666666em;
+    margin-bottom: 2.5rem;
   }
 
   .about-card:nth-of-type(2) {
@@ -887,7 +887,7 @@
   }
 
   .features-list-item-header {
-    margin-bottom: 1em;
+    margin-bottom: 1.25rem;
     font-size: $font_size_20;
     color: $header_secondary_color;
     text-transform: uppercase;
@@ -916,7 +916,7 @@
   }
 
   .pricing-card-header {
-    margin-bottom: 1.5em;
+    margin-bottom: 2.25rem;
     font-size: $font_size_24;
   }
 

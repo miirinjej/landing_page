@@ -22,7 +22,7 @@
   }
 
   body {
-    font: 1.25em/1.8 $content_font;
+    font: 1.25rem/1.8 $content_font;
     color: $content_primary_color;
     background: $background_primary_color;
   }
