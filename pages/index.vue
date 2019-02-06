@@ -603,53 +603,77 @@
           <div class="main-footer-copyright">
             Copyright © 2018 UIXREX, All rights Reserved.
           </div>
-          <ul class="main-footer-social-list">
-            <li class="main-footer-social-list-item">
+          <ul class="main-footer-social-buttons-list">
+            <li class="main-footer-social-buttons-list-item">
               <a
-                class=""
-                href=""
+                class="button-link"
+                href="https://www.facebook.com/"
+                target="_blank"
               >
-                <fa icon="" />
+                <fa
+                  :icon="['fab', 'facebook-f']"
+                  fixed-width
+                />
               </a>
             </li>
-            <li class="main-footer-social-list-item">
+            <li class="main-footer-social-buttons-list-item">
               <a
-                class=""
-                href=""
+                class="button-link"
+                href="https://twitter.com/"
+                target="_blank"
               >
-                <fa icon="" />
+                <fa
+                  :icon="['fab', 'twitter']"
+                  fixed-width
+                />
               </a>
             </li>
-            <li class="main-footer-social-list-item">
+            <li class="main-footer-social-buttons-list-item">
               <a
-                class=""
-                href=""
+                class="button-link"
+                href="https://www.instagram.com/"
+                target="_blank"
               >
-                <fa icon="" />
+                <fa
+                  :icon="['fab', 'instagram']"
+                  fixed-width
+                />
               </a>
             </li>
-            <li class="main-footer-social-list-item">
+            <li class="main-footer-social-buttons-list-item">
               <a
-                class=""
-                href=""
+                class="button-link"
+                href="https://plus.google.com/"
+                target="_blank"
               >
-                <fa icon="" />
+                <fa
+                  :icon="['fab', 'google-plus-g']"
+                  fixed-width
+                />
               </a>
             </li>
-            <li class="main-footer-social-list-item">
+            <li class="main-footer-social-buttons-list-item">
               <a
-                class=""
-                href=""
+                class="button-link"
+                href="https://www.behance.net/"
+                target="_blank"
               >
-                <fa icon="" />
+                <fa
+                  :icon="['fab', 'behance']"
+                  fixed-width
+                />
               </a>
             </li>
-            <li class="main-footer-social-list-item">
+            <li class="main-footer-social-buttons-list-item">
               <a
-                class=""
-                href=""
+                class="button-link"
+                href="https://dribbble.com/"
+                target="_blank"
               >
-                <fa icon="" />
+                <fa
+                  :icon="['fab', 'dribbble']"
+                  fixed-width
+                />
               </a>
             </li>
           </ul>
@@ -1240,7 +1264,30 @@
     background: url(/map/map.png) 0 0 no-repeat;
   }
 
+  .main-footer {
+    height: 16.875rem;
+    color: $content_secondary_color;
+    background: $main_footer_background_color;
+
+    .l-row {
+      height: 100%;
+    }
+  }
+
   .main-footer-copyright {
     font-family: $font_montserrat;
+    font-size: $font_size_16;
+    font-weight: 600;
+  }
+
+  .main-footer-social-buttons-list {
+    display: flex;
+    font-size: $font_size_30;
+    user-select: none;
+    @extend %list_style;
+  }
+
+  .main-footer-social-buttons-list-item:not(:last-of-type) {
+    margin-right: 3.4375rem;
   }
 </style>
