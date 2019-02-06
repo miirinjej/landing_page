@@ -511,58 +511,80 @@
           Say Hello To Us!
         </h2>
         <p class="contact-description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. et
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore. et
           dolore magna aliqua.
         </p>
         <div class="l-row">
-          <div class="contact-information">
+          <div class="contact-information js-contact-information">
             <div class="contact-information-section">
-              <fa icon="" />
-              <h3 class="contact-information-section-header">
-                Location
-              </h3>
-              <span class="contact-information-section-text">
-                Jurain, Dhaka Bangladesh
-              </span>
+              <div class="l-row">
+                <fa
+                  class="contact-information-section-icon"
+                  icon="map"
+                />
+                <div>
+                  <h3 class="contact-information-section-header">
+                    Location:
+                  </h3>
+                  <span class="contact-information-section-text">
+                    Jurain, Dhaka Bangladesh
+                  </span>
+                </div>
+              </div>
             </div>
             <div class="contact-information-section">
-              <fa icon="" />
-              <h3 class="contact-information-section-header">
-                Phone number
-              </h3>
-              <span class="contact-information-section-text">
-                +1234321321
-              </span>
+              <div class="l-row">
+                <fa
+                  class="contact-information-section-icon"
+                  icon="phone"
+                />
+                <div>
+                  <h3 class="contact-information-section-header">
+                    Phone number:
+                  </h3>
+                  <span class="contact-information-section-text">
+                    +1234321321
+                  </span>
+                </div>
+              </div>
             </div>
             <div class="contact-information-section">
-              <fa icon="" />
-              <h3 class="contact-information-section-header">
-                Email
-              </h3>
-              <span class="contact-information-section-text">
-                websitename@mail.com
-              </span>
+              <div class="l-row">
+                <fa
+                  class="contact-information-section-icon"
+                  icon="envelope"
+                />
+                <div>
+                  <h3 class="contact-information-section-header">
+                    Email:
+                  </h3>
+                  <span class="contact-information-section-text">
+                    websitename@mail.com
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
           <form
             action=""
+            name="contact-form"
             class="contact-form"
           >
             <input
               type="text"
-              class="contact-form-name"
+              class="contact-form-name js-contact-form-input"
               placeholder="Name"
             >
             <input
               type="text"
-              class="contact-form-email"
+              class="contact-form-email js-contact-form-input"
               placeholder="Email"
             >
-            <input
-              type="text"
+            <textarea
               class="contact-form-message"
               placeholder="Your Message"
-            >
+              :style="{ height: contactFormMessageHeight + 'px' }"
+            ></textarea>
             <button
               type="submit"
               class="contact-form-submit-button"
@@ -696,7 +718,17 @@
               'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
           },
         ],
+        contactFormMessageHeight: 0,
       };
+    },
+    mounted() {
+      const contactInformationHeight = document.querySelector('.js-contact-information').offsetHeight;
+      const contactFormInputs = document.querySelectorAll('.js-contact-form-input');
+      const contactFormInputHeight = contactFormInputs[0].offsetHeight;
+      const contactFormInputMarginBottom = window.getComputedStyle(contactFormInputs[0], null).getPropertyValue('margin-bottom').match(/^\d+/);
+
+      this.contactFormMessageHeight = contactInformationHeight - (contactFormInputHeight * contactFormInputs.length
+        + contactFormInputMarginBottom * contactFormInputs.length);
     },
     methods: {
       slideScreenshotsCarousel(value) {
@@ -1099,8 +1131,108 @@
     margin-bottom: 1.25rem;
   }
 
+  .contact {
+    padding: 4.625rem 0;
+    font-size: $font_size_15;
+    color: $contact_section_content_color;
+    background: $contact_section_background_color;
+  }
+
   .contact-header {
+    position: relative;
+    margin-bottom: 1.6875rem;
     font-family: $font_raleway;
+    color: $contact_section_header_color;
+  }
+
+  .contact-header::after {
+    position: absolute;
+    bottom: -0.625rem;
+    left: 50%;
+    width: 4.4375rem;
+    height: 5px;
+    content: "";
+    background: $contact_header_underline_color;
+    transform: translateX(-50%);
+  }
+
+  .contact-description {
+    margin-bottom: 4.1875rem;
+  }
+
+  .contact-information {
+    align-self: flex-start;
+    width: 23.6875rem;
+    padding: 2.875rem 1.4375rem;
+    margin-right: 0.875rem;
+    text-align: left;
+    background: $background_primary_color;
+
+    .l-row {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  .contact-information-section:not(:last-of-type) {
+    margin-bottom: 1.875rem;
+  }
+
+  .contact-information-section-icon {
+    margin-right: 1rem;
+    font-size: $font_size_20;
+    color: $icon_tertiary_color;
+  }
+
+  .contact-information-section-header {
+    margin-bottom: 0.625rem;
+    font-size: $font_size_18;
+    color: $contact_section_header_color;
+  }
+
+  .contact-information-section-text {
+    font-weight: 300;
+  }
+
+  .contact-form {
+    width: 48.5625rem;
+    text-align: left;
+  }
+
+  .contact-form ::placeholder {
+    font-size: $font_size_16;
+    font-weight: 300;
+    color: $placeholder_color;
+  }
+
+  .contact-form-name,
+  .contact-form-email,
+  .contact-form-message {
+    width: 100%;
+    margin-bottom: 1.625rem;
+    border: none;
+  }
+
+  .contact-form-name,
+  .contact-form-email {
+    height: 3rem;
+    padding: 0 0.8125rem;
+  }
+
+  .contact-form-message {
+    padding: 1.4375rem 0.8125rem;
+    resize: none;
+  }
+
+  .contact-form-submit-button {
+    width: 9.875rem;
+    height: 2.8125rem;
+    padding: 0;
+    font-size: $font_size_16;
+    color: $content_secondary_color;
+    cursor: pointer;
+    background: $send_message_button_background_color;
+    border: none;
   }
 
   .main-footer-copyright {
