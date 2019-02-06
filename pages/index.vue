@@ -1235,6 +1235,11 @@
     border: none;
   }
 
+  .map {
+    height: 25.0625rem;
+    background: url(/map/map.png) 0 0 no-repeat;
+  }
+
   .main-footer-copyright {
     font-family: $font_montserrat;
   }
