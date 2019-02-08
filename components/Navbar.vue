@@ -28,12 +28,12 @@
     data() {
       return {
         menuItems: [
-          { name: 'Home' },
-          { name: 'About' },
-          { name: 'Features' },
-          { name: 'Pricing' },
-          { name: 'Screenshot' },
-          { name: 'Contact' },
+          { name: 'Home', isActive: true },
+          { name: 'About', isActive: false },
+          { name: 'Features', isActive: false },
+          { name: 'Pricing', isActive: false },
+          { name: 'Screenshot', isActive: false },
+          { name: 'Contact', isActive: false },
         ],
         isSticky: false,
       };

@@ -2,7 +2,7 @@
   <div class="l-container">
     <header
       id="home"
-      class="home main-header"
+      class="home main-header js-affix-place"
     >
       <div class="l-header">
         <div class="l-row">
@@ -58,7 +58,7 @@
     </header>
     <section
       id="about"
-      class="about"
+      class="about js-affix-place"
     >
       <div class="l-content">
         <h2 class="about-header">
@@ -125,7 +125,7 @@
     </section>
     <section
       id="features"
-      class="features"
+      class="features js-affix-place"
     >
       <div class="l-content">
         <h2 class="features-header">
@@ -230,7 +230,7 @@
     </section>
     <section
       id="pricing"
-      class="pricing"
+      class="pricing js-affix-place"
     >
       <div class="l-content">
         <h2 class="pricing-header">
@@ -390,7 +390,7 @@
     </section>
     <section
       id="screenshot"
-      class="screenshot"
+      class="screenshot js-affix-place"
     >
       <h2 class="screenshot-header">
         App Screenshots
@@ -504,7 +504,7 @@
     </section>
     <section
       id="contact"
-      class="contact"
+      class="contact js-affix-place"
     >
       <div class="l-content">
         <h2 class="contact-header">
@@ -772,7 +772,7 @@
 
 <style lang="scss">
   .home {
-    margin-bottom: 2.1875rem;
+    margin-bottom: -2.875rem;
     color: $content_secondary_color;
     background: $background_primary_color url("/background/home.svg") 0 0 no-repeat;
   }
@@ -827,7 +827,7 @@
   }
 
   .about {
-    margin-bottom: 5.625rem;
+    padding: 5.625rem 0;
   }
 
   .about-header,
