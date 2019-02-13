@@ -1,0 +1,8 @@
+@import "../themes/default";
+
+
+.heading {
+  &--primary {
+    color: $heading_primary_color;
+  }
+}

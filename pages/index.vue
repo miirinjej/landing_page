@@ -1,51 +1,50 @@
 <template>
   <div class="l-container">
-    <header
-      id="home"
-      class="home main-header js-affix-place"
+    <section
+      id="home-section"
+      class="home-section js-affix"
     >
       <div class="l-header">
         <div class="l-row">
-          <figure class="home-figure">
+          <figure class="home-section__figure">
             <img
-              class="home-figure-image"
               src="/home/phone.png"
               alt="phone"
             >
           </figure>
-          <div class="home-promo">
-            <h1 class="home-promo-header">
+          <div class="promo">
+            <h1 class="promo__heading">
               The Best App to Increase
               Your Productivity
             </h1>
-            <p class="home-promo-description">
+            <p class="promo__description">
               A mobile app is a computer program designed to run on a
               mobile device such as a phone/tablet or watch.
             </p>
-            <div class="home-promo-download">
-              <button class="home-promo-download-button button">
+            <div class="promo__download">
+              <button class="promo__button button button--rounded">
                 <span class="l-row">
                   <fa
-                    class="home-promo-download-button-icon"
+                    class="promo__icon"
                     :icon="['fab', 'apple']"
                   />
-                  <span class="home-promo-download-button-text">
+                  <span class="promo__action-description">
                     Get It From
-                    <span class="home-promo-download-button-text-store">
+                    <span class="promo__store-name">
                       Appstore
                     </span>
                   </span>
                 </span>
               </button>
-              <button class="home-promo-download-button button">
+              <button class="promo__button button button--rounded">
                 <span class="l-row">
                   <fa
-                    class="home-promo-download-button-icon"
+                    class="promo__icon"
                     :icon="['fab', 'google-play']"
                   />
-                  <span class="home-promo-download-button-text">
+                  <span class="promo__action-description">
                     Get It From
-                    <span class="home-promo-download-button-text-store">
+                    <span class="promo__store-name">
                       Playstore
                     </span>
                   </span>
@@ -55,67 +54,67 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
     <section
-      id="about"
-      class="about js-affix-place"
+      id="about-section"
+      class="about-section js-affix"
     >
       <div class="l-content">
-        <h2 class="about-header">
+        <h2 class="about-section__heading heading heading--primary">
           About The App
         </h2>
-        <p class="about-description">
+        <p class="about-section__description">
           Writers and stars of Veep have responded incredulously to the news an Australian politician<br>
           required preinstalled stitches way email client, calendar, mapping program.
         </p>
         <div class="l-row">
-          <div class="about-card">
+          <div class="card">
             <div class="l-col">
-              <figure class="about-card-figure">
-                <div class="about-card-figure-rhombus"></div>
+              <figure class="card__figure">
+                <div class="card__rhombus-layer"></div>
                 <fa
-                  class="about-card-figure-icon"
+                  class="card__icon"
                   icon="headset"
                 />
               </figure>
-              <h3 class="about-card-header">
+              <h3 class="card__heading">
                 24/7 Support
               </h3>
-              <p class="about-card-description">
+              <p class="card__description">
                 Apps that are not preinstalled are usually available through distribution platforms called app stores.
               </p>
             </div>
           </div>
-          <div class="about-card">
+          <div class="card">
             <div class="l-col">
-              <figure class="about-card-figure">
-                <div class="about-card-figure-rhombus"></div>
+              <figure class="card__figure">
+                <div class="card__rhombus-layer"></div>
                 <fa
-                  class="about-card-figure-icon"
+                  class="card__icon"
                   icon="lock"
                 />
               </figure>
-              <h3 class="about-card-header">
+              <h3 class="card__heading">
                 Data Privacy
               </h3>
-              <p class="about-card-description">
+              <p class="card__description">
                 Apps that are not preinstalled are usually available through distribution platforms called app stores.
               </p>
             </div>
           </div>
-          <div class="about-card">
+          <div class="card">
             <div class="l-col">
-              <figure class="about-card-figure">
-                <div class="about-card-figure-rhombus"></div>
+              <figure class="card__figure">
+                <div class="card__rhombus-layer"></div>
                 <fa
-                  class="about-card-figure-icon"
+                  class="card__icon"
                   icon="download"
                 />
               </figure>
-              <h3 class="about-card-header">
+              <h3 class="card__heading">
                 Easy Download
               </h3>
-              <p class="about-card-description">
+              <p class="card__description">
                 Apps that are not preinstalled are usually available through distribution platforms called app stores.
               </p>
             </div>
@@ -124,263 +123,266 @@
       </div>
     </section>
     <section
-      id="features"
-      class="features js-affix-place"
+      id="features-section"
+      class="features-section js-affix"
     >
       <div class="l-content">
-        <h2 class="features-header">
+        <h2 class="features-section__heading">
           Features The App
         </h2>
-        <p class="features-description">
+        <p class="features-section__description">
           Writers and stars of Veep have responded incredulously to the news an Australian politician<br>
           required preinstalled stitches way email client, calendar, mapping program.
         </p>
         <div class="l-row">
-          <figure class="features-figure">
+          <figure class="features-section__figure">
             <img
-              class="features-figure-image"
-              src="/features/hero.png"
+              src="/features/phone.png"
               alt="hero"
             >
           </figure>
-          <ul class="features-list">
-            <li class="features-list-item">
-              <div class="l-row">
-                <div class="features-list-item-circle">
-                  <fa
-                    class="features-list-item-circle-icon"
-                    icon="layer-group"
-                  />
+          <div class="features">
+            <ul class="features__list">
+              <li class="features__item">
+                <div class="l-row">
+                  <figure class="features_figure figure">
+                    <div class="figure__circle-layer">
+                      <fa
+                        class="figure__icon"
+                        icon="layer-group"
+                      />
+                    </div>
+                  </figure>
+                  <div>
+                    <h3 class="features__heading">
+                      Creative design
+                    </h3>
+                    <p class="features__description">
+                      Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another
+                      projects
+                      managed with a easy design is what we stand for.incididunt ugt labore.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 class="features-list-item-header">
-                    Creative design
-                  </h3>
-                  <p class="features-list-item-description">
-                    Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another
-                    projects
-                    managed with a easy design is what we stand for.incididunt ugt labore.
-                  </p>
+              </li>
+              <li class="features__item">
+                <div class="l-row">
+                  <div class="figure__circle-layer">
+                    <fa
+                      class="figure__icon"
+                      icon="ellipsis-h"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="features__heading">
+                      Unlimited features
+                    </h3>
+                    <p class="features__description">
+                      Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another
+                      projects
+                      managed with a easy design is what we stand for.incididunt ugt labore.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="features-list-item">
-              <div class="l-row">
-                <div class="features-list-item-circle">
-                  <fa
-                    class="features-list-item-circle-icon"
-                    icon="ellipsis-h"
-                  />
+              </li>
+              <li class="features__item">
+                <div class="l-row">
+                  <div class="figure__circle-layer">
+                    <fa
+                      class="figure__icon"
+                      :icon="['far', 'hand-point-up']"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="features__heading">
+                      User friendly
+                    </h3>
+                    <p class="features__description">
+                      Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another
+                      projects
+                      managed with a easy design is what we stand for.incididunt ugt labore.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 class="features-list-item-header">
-                    Unlimited features
-                  </h3>
-                  <p class="features-list-item-description">
-                    Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another
-                    projects
-                    managed with a easy design is what we stand for.incididunt ugt labore.
-                  </p>
+              </li>
+              <li class="features__item">
+                <div class="l-row">
+                  <div class="figure__circle-layer">
+                    <fa
+                      class="figure__icon"
+                      icon="code"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="features__heading">
+                      Clean codes
+                    </h3>
+                    <p class="features__description">
+                      Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another
+                      projects
+                      managed with a easy design is what we stand for.incididunt ugt labore.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="features-list-item">
-              <div class="l-row">
-                <div class="features-list-item-circle">
-                  <fa
-                    class="features-list-item-circle-icon"
-                    :icon="['far', 'hand-point-up']"
-                  />
-                </div>
-                <div>
-                  <h3 class="features-list-item-header">
-                    User friendly
-                  </h3>
-                  <p class="features-list-item-description">
-                    Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another
-                    projects
-                    managed with a easy design is what we stand for.incididunt ugt labore.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="features-list-item">
-              <div class="l-row">
-                <div class="features-list-item-circle">
-                  <fa
-                    class="features-list-item-circle-icon"
-                    icon="code"
-                  />
-                </div>
-                <div>
-                  <h3 class="features-list-item-header">
-                    Clean codes
-                  </h3>
-                  <p class="features-list-item-description">
-                    Lorem ipsum dolor sit amet, consectet adop adipisicing elit, sed do eiusmod temporara. Another
-                    projects
-                    managed with a easy design is what we stand for.incididunt ugt labore.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
     <section
-      id="pricing"
-      class="pricing js-affix-place"
+      id="pricing-section"
+      class="pricing-section js-affix"
     >
       <div class="l-content">
-        <h2 class="pricing-header">
+        <h2 class="pricing-section__heading heading heading--primary">
           Pricing Plan
         </h2>
-        <p class="pricing-description">
+        <p class="pricing-section__description">
           Writers and stars of Veep have responded incredulously to the news an Australian politician<br>
           required preinstalled stitches way email client, calendar, mapping program.
         </p>
         <div class="l-row">
-          <div class="pricing-card">
+          <div class="plan">
             <div class="l-col">
-              <h3 class="pricing-card-header">
+              <h3 class="plan__heading">
                 Basic
               </h3>
-              <div class="pricing-card-cost">
+              <div class="plan__price">
                 $00
               </div>
-              <div class="pricing-card-access">
+              <div class="plan__details">
                 Limited access
               </div>
-              <ul class="pricing-card-list">
-                <li class="pricing-card-list-item">
+              <ul class="plan__list">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon check-icon"
+                    class="plan__icon plan__icon--check"
                     icon="check"
                   />100 MB Disk Space
                 </li>
-                <li class="pricing-card-list-item">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon check-icon"
+                    class="plan__icon plan__icon--check"
                     icon="check"
                   />2 Subdomains
                 </li>
-                <li class="pricing-card-list-item">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon check-icon"
+                    class="plan__icon plan__icon--check"
                     icon="check"
                   />5 Email Accounts
                 </li>
-                <li class="pricing-card-list-item">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon times-icon"
+                    class="plan__icon plan__icon--times"
                     icon="times"
                   />No License
                 </li>
-                <li class="pricing-card-list-item">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon times-icon"
+                    class="plan__icon plan__icon--times"
                     icon="times"
                   />Phone & Mail Support
                 </li>
               </ul>
-              <button class="pricing-card-purchase-button button">
+              <button class="plan__button button button--rounded">
                 Purchase
               </button>
             </div>
           </div>
-          <div class="pricing-card">
+          <div class="plan">
             <div class="l-col">
-              <h3 class="pricing-card-header">
+              <h3 class="plan__heading">
                 Professional
               </h3>
-              <div class="pricing-card-cost">
+              <div class="plan__price">
                 $12
               </div>
-              <div class="pricing-card-access">
+              <div class="plan__details">
                 Limited access
               </div>
-              <ul class="pricing-card-list">
-                <li class="pricing-card-list-item">
+              <ul class="plan__list">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon check-icon"
+                    class="plan__icon plan__icon--check"
                     icon="check"
                   />100 MB Disk Space
                 </li>
-                <li class="pricing-card-list-item">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon check-icon"
+                    class="plan__icon plan__icon--check"
                     icon="check"
                   />2 Subdomains
                 </li>
-                <li class="pricing-card-list-item">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon check-icon"
+                    class="plan__icon plan__icon--check"
                     icon="check"
                   />5 Email Accounts
                 </li>
-                <li class="pricing-card-list-item">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon check-icon"
+                    class="plan__icon plan__icon--check"
                     icon="check"
                   />No License
                 </li>
-                <li class="pricing-card-list-item">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon times-icon"
+                    class="plan__icon plan__icon--times"
                     icon="times"
                   />Phone & Mail Support
                 </li>
               </ul>
-              <button class="pricing-card-purchase-button button">
+              <button class="plan__button button button--rounded">
                 Purchase
               </button>
             </div>
           </div>
-          <div class="pricing-card">
+          <div class="plan">
             <div class="l-col">
-              <h3 class="pricing-card-header">
+              <h3 class="plan__heading">
                 Business
               </h3>
-              <div class="pricing-card-cost">
+              <div class="plan__price">
                 $22
               </div>
-              <div class="pricing-card-access">
+              <div class="plan__details">
                 Limited access
               </div>
-              <ul class="pricing-card-list">
-                <li class="pricing-card-list-item">
+              <ul class="plan__list">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon check-icon"
+                    class="plan__icon plan__icon--check"
                     icon="check"
                   />100 MB Disk Space
                 </li>
-                <li class="pricing-card-list-item">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon check-icon"
+                    class="plan__icon plan__icon--check"
                     icon="check"
                   />2 Subdomains
                 </li>
-                <li class="pricing-card-list-item">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon check-icon"
+                    class="plan__icon plan__icon--check"
                     icon="check"
                   />5 Email Accounts
                 </li>
-                <li class="pricing-card-list-item">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon check-icon"
+                    class="plan__icon plan__icon--check"
                     icon="check"
                   />No License
                 </li>
-                <li class="pricing-card-list-item">
+                <li class="plan__item">
                   <fa
-                    class="pricing-card-list-item-icon check-icon"
+                    class="plan__icon plan__icon--check"
                     icon="check"
                   />Phone & Mail Support
                 </li>
               </ul>
-              <button class="pricing-card-purchase-button button">
+              <button class="plan__button button button--rounded">
                 Purchase
               </button>
             </div>
@@ -389,20 +391,20 @@
       </div>
     </section>
     <section
-      id="screenshot"
-      class="screenshot js-affix-place"
+      id="screenshots-section"
+      class="screenshots-section js-affix"
     >
-      <h2 class="screenshot-header">
+      <h2 class="screenshots-section__heading heading heading--primary">
         App Screenshots
       </h2>
-      <p class="screenshot-description">
+      <p class="screenshots-section__description">
         Most such devices are sold with several apps bundled as pre-installed software,<br>
         such as a web browser, email client, calendar, mapping program.
       </p>
       <no-ssr placeholder="Loading...">
         <carousel
-          ref="screenshotsCarousel"
-          class="screenshot-carousel"
+          ref="screenshotsSectionCarousel"
+          class="carousel"
           :per-page-custom="[[1920, 5]]"
           :autoplay="true"
           :autoplay-timeout="5000"
@@ -412,153 +414,149 @@
           <slide
             v-for="(screenshot, index) in screenshots"
             :key="index"
-            class="screenshot-carousel-slide"
           >
-            <figure class="screenshot-carousel-slide-figure">
+            <figure>
               <img
-                class="screenshot-carousel-slide-figure-image"
-                :src="screenshot.url"
+                :src="screenshot.imageUrl"
                 :alt="screenshot.name"
               >
             </figure>
           </slide>
         </carousel>
-        <div class="screenshot-carousel-navigation">
+        <div class="navigation">
           <button
-            class="screenshot-carousel-navigation-button circle-button"
-            @click="slideScreenshotsCarousel('prev')"
+            class="navigation__button button button--circle"
+            @click="navigate('prev')"
           >
             <fa
-              class="screenshot-carousel-navigation-button-icon"
+              class="navigation__icon"
               icon="long-arrow-alt-left"
             />
           </button>
           <button
-            class="screenshot-carousel-navigation-button circle-button"
-            @click="slideScreenshotsCarousel('next')"
+            class="navigation__button button button--circle"
+            @click="navigate('next')"
           >
             <fa
-              class="screenshot-carousel-navigation-button-icon"
+              class="navigation__icon"
               icon="long-arrow-alt-right"
             />
           </button>
         </div>
       </no-ssr>
     </section>
-    <section
-      id="reviews"
-      class="reviews"
-    >
+    <section class="reviews-section">
       <div class="l-content">
-        <h2 class="reviews-header">
+        <h2 class="reviews-section__heading">
           Some Talk of Our Clients
         </h2>
-        <carousel
-          ref="reviewsCarousel"
-          class="reviews-carousel"
-          :per-page-custom="[[1920, 2]]"
-          :loop="true"
-          :pagination-enabled="true"
-          :space-padding="0"
-          :pagination-active-color="'#cbd9f1'"
-          :pagination-color="'#90b4ee'"
-          :pagination-padding="6"
-          :pagination-size="15"
-        >
-          <slide
-            v-for="(review, index) in reviews"
-            :key="index"
-            class="reviews-carousel-slide"
+        <no-ssr placeholder="Loading...">
+          <carousel
+            class="carousel"
+            :per-page-custom="[[1920, 2]]"
+            :loop="true"
+            :pagination-enabled="true"
+            :space-padding="0"
+            :pagination-active-color="'#cbd9f1'"
+            :pagination-color="'#90b4ee'"
+            :pagination-padding="6"
+            :pagination-size="15"
           >
-            <div class="reviews-carousel-slide-content">
-              <figure class="reviews-carousel-slide-content-figure">
-                <img
-                  class="reviews-carousel-slide-content-figure-image"
-                  :src="review.imageUrl"
-                  :alt="review.author"
-                >
-              </figure>
-              <div class="reviews-carousel-slide-content-name">
-                {{ review.author }}
-              </div>
-              <div class="reviews-carousel-slide-content-position">
-                {{ review.position }}
-              </div>
-              <div class="l-row">
-                <fa
-                  class="reviews-carousel-slide-content-icon quote-left-icon"
-                  icon="quote-left"
-                />
-                <span class="reviews-carousel-slide-content-text">
-                  {{ review.reviewText }}
+            <slide
+              v-for="(review, index) in reviews"
+              :key="index"
+              class="slide"
+            >
+              <div class="slide__content">
+                <figure class="slide__figure">
+                  <img
+                    class="slide__image"
+                    :src="review.imageUrl"
+                    :alt="review.author"
+                  >
+                </figure>
+                <div class="slide__author">
+                  {{ review.author }}
+                </div>
+                <div class="slide__position">
+                  {{ review.position }}
+                </div>
+                <div class="l-row">
                   <fa
-                    class="reviews-carousel-slide-content-icon quote-right-icon"
-                    icon="quote-right"
+                    class="slide__icon slide__icon--quote-left"
+                    icon="quote-left"
                   />
-                </span>
+                  <span class="slide__review-text">
+                    {{ review.reviewText }}
+                    <fa
+                      class="slide__icon slide__icon--quote-right"
+                      icon="quote-right"
+                    />
+                  </span>
+                </div>
               </div>
-            </div>
-          </slide>
-        </carousel>
+            </slide>
+          </carousel>
+        </no-ssr>
       </div>
     </section>
     <section
-      id="contact"
-      class="contact js-affix-place"
+      id="contact-section"
+      class="contact-section js-affix"
     >
       <div class="l-content">
-        <h2 class="contact-header">
+        <h2 class="contact-section__heading">
           Say Hello To Us!
         </h2>
-        <p class="contact-description">
+        <p class="contact-section__description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore. et
           dolore magna aliqua.
         </p>
         <div class="l-row">
-          <div class="contact-information js-contact-information">
-            <div class="contact-information-section">
+          <div class="contact-information">
+            <div class="contact-information__section">
               <div class="l-row">
                 <fa
-                  class="contact-information-section-icon"
+                  class="contact-information__icon"
                   icon="map"
                 />
                 <div>
-                  <h3 class="contact-information-section-header">
+                  <h3 class="contact-information__type">
                     Location:
                   </h3>
-                  <span class="contact-information-section-text">
+                  <span class="contact-information__value">
                     Jurain, Dhaka Bangladesh
                   </span>
                 </div>
               </div>
             </div>
-            <div class="contact-information-section">
+            <div class="contact-information__section">
               <div class="l-row">
                 <fa
-                  class="contact-information-section-icon"
+                  class="contact-information__icon"
                   icon="phone"
                 />
                 <div>
-                  <h3 class="contact-information-section-header">
+                  <h3 class="contact-information__type">
                     Phone number:
                   </h3>
-                  <span class="contact-information-section-text">
+                  <span class="contact-information__value">
                     +1234321321
                   </span>
                 </div>
               </div>
             </div>
-            <div class="contact-information-section">
+            <div class="contact-information__section">
               <div class="l-row">
                 <fa
-                  class="contact-information-section-icon"
+                  class="contact-information__icon"
                   icon="envelope"
                 />
                 <div>
-                  <h3 class="contact-information-section-header">
+                  <h3 class="contact-information__type">
                     Email:
                   </h3>
-                  <span class="contact-information-section-text">
+                  <span class="contact-information__value">
                     websitename@mail.com
                   </span>
                 </div>
@@ -567,27 +565,28 @@
           </div>
           <form
             action=""
-            name="contact-form"
-            class="contact-form"
+            name="feedback"
+            class="feedback"
           >
             <input
               type="text"
-              class="contact-form-name js-contact-form-input"
+              class="feedback__name"
               placeholder="Name"
             >
             <input
               type="text"
-              class="contact-form-email js-contact-form-input"
+              class="feedback__email"
               placeholder="Email"
             >
             <textarea
-              class="contact-form-message"
+              class="feedback__message"
               placeholder="Your Message"
-              :style="{ height: contactFormMessageHeight + 'px' }"
-            ></textarea>
+              :style="{ height: feedbackMessageHeight + 'px' }"
+            >
+          </textarea>
             <button
               type="submit"
-              class="contact-form-submit-button"
+              class="feedback__submit"
             >
               Send Message
             </button>
@@ -595,88 +594,88 @@
         </div>
       </div>
     </section>
-    <section class="map">
-    </section>
     <footer class="main-footer">
       <div class="l-footer">
         <div class="l-row">
-          <div class="main-footer-copyright">
+          <div class="main-footer__copyright">
             Copyright © 2018 UIXREX, All rights Reserved.
           </div>
-          <ul class="main-footer-social-buttons-list">
-            <li class="main-footer-social-buttons-list-item">
-              <a
-                class="button-link"
-                href="https://www.facebook.com/"
-                target="_blank"
-              >
-                <fa
-                  :icon="['fab', 'facebook-f']"
-                  fixed-width
-                />
-              </a>
-            </li>
-            <li class="main-footer-social-buttons-list-item">
-              <a
-                class="button-link"
-                href="https://twitter.com/"
-                target="_blank"
-              >
-                <fa
-                  :icon="['fab', 'twitter']"
-                  fixed-width
-                />
-              </a>
-            </li>
-            <li class="main-footer-social-buttons-list-item">
-              <a
-                class="button-link"
-                href="https://www.instagram.com/"
-                target="_blank"
-              >
-                <fa
-                  :icon="['fab', 'instagram']"
-                  fixed-width
-                />
-              </a>
-            </li>
-            <li class="main-footer-social-buttons-list-item">
-              <a
-                class="button-link"
-                href="https://plus.google.com/"
-                target="_blank"
-              >
-                <fa
-                  :icon="['fab', 'google-plus-g']"
-                  fixed-width
-                />
-              </a>
-            </li>
-            <li class="main-footer-social-buttons-list-item">
-              <a
-                class="button-link"
-                href="https://www.behance.net/"
-                target="_blank"
-              >
-                <fa
-                  :icon="['fab', 'behance']"
-                  fixed-width
-                />
-              </a>
-            </li>
-            <li class="main-footer-social-buttons-list-item">
-              <a
-                class="button-link"
-                href="https://dribbble.com/"
-                target="_blank"
-              >
-                <fa
-                  :icon="['fab', 'dribbble']"
-                  fixed-width
-                />
-              </a>
-            </li>
-          </ul>
+          <div class="follow">
+            <ul class="follow__list">
+              <li class="follow__item">
+                <a
+                  class="link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <fa
+                    :icon="['fab', 'facebook-f']"
+                    fixed-width
+                  />
+                </a>
+              </li>
+              <li class="follow__item">
+                <a
+                  class="link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                >
+                  <fa
+                    :icon="['fab', 'twitter']"
+                    fixed-width
+                  />
+                </a>
+              </li>
+              <li class="follow__item">
+                <a
+                  class="link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <fa
+                    :icon="['fab', 'instagram']"
+                    fixed-width
+                  />
+                </a>
+              </li>
+              <li class="follow__item">
+                <a
+                  class="link"
+                  href="https://plus.google.com/"
+                  target="_blank"
+                >
+                  <fa
+                    :icon="['fab', 'google-plus-g']"
+                    fixed-width
+                  />
+                </a>
+              </li>
+              <li class="follow__item">
+                <a
+                  class="link"
+                  href="https://www.behance.net/"
+                  target="_blank"
+                >
+                  <fa
+                    :icon="['fab', 'behance']"
+                    fixed-width
+                  />
+                </a>
+              </li>
+              <li class="follow__item">
+                <a
+                  class="link"
+                  href="https://dribbble.com/"
+                  target="_blank"
+                >
+                  <fa
+                    :icon="['fab', 'dribbble']"
+                    fixed-width
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
@@ -690,13 +689,13 @@
     data() {
       return {
         screenshots: [
-          { name: 'workout', url: '/screenshot/workout.png' },
-          { name: 'story', url: '/screenshot/story.png' },
-          { name: 'map', url: '/screenshot/map.png' },
-          { name: 'music player', url: '/screenshot/music_player.png' },
-          { name: 'login', url: '/screenshot/login.png' },
-          { name: 'story 2', url: '/screenshot/story_2.png' },
-          { name: 'map 2', url: '/screenshot/map_2.png' },
+          { name: 'workout', imageUrl: '/screenshots/workout.png' },
+          { name: 'story', imageUrl: '/screenshots/story.png' },
+          { name: 'map', imageUrl: '/screenshots/map.png' },
+          { name: 'music player', imageUrl: '/screenshots/music_player.png' },
+          { name: 'login', imageUrl: '/screenshots/login.png' },
+          { name: 'story 2', imageUrl: '/screenshots/story_2.png' },
+          { name: 'map 2', imageUrl: '/screenshots/map_2.png' },
         ],
         reviews: [
           {
@@ -742,21 +741,21 @@
               'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
           },
         ],
-        contactFormMessageHeight: 0,
+        feedbackMessageHeight: 0,
       };
     },
     mounted() {
-      const contactInformationHeight = document.querySelector('.js-contact-information').offsetHeight;
-      const contactFormInputs = document.querySelectorAll('.js-contact-form-input');
-      const contactFormInputHeight = contactFormInputs[0].offsetHeight;
-      const contactFormInputMarginBottom = window.getComputedStyle(contactFormInputs[0], null).getPropertyValue('margin-bottom').match(/^\d+/);
+      const contactInformationHeight = document.querySelector('.contact-information').offsetHeight;
+      const feedbackInputs = document.querySelectorAll('input[type="text"]');
+      const feedbackInputHeight = feedbackInputs[0].offsetHeight;
+      const feedbackInputMarginBottom = window.getComputedStyle(feedbackInputs[0], null).getPropertyValue('margin-bottom').match(/^\d+/);
 
-      this.contactFormMessageHeight = contactInformationHeight - (contactFormInputHeight * contactFormInputs.length
-        + contactFormInputMarginBottom * contactFormInputs.length);
+      this.feedbackMessageHeight = contactInformationHeight - (feedbackInputHeight * feedbackInputs.length
+        + feedbackInputMarginBottom * feedbackInputs.length);
     },
     methods: {
-      slideScreenshotsCarousel(value) {
-        const carousel = this.$refs.screenshotsCarousel;
+      navigate(value) {
+        const carousel = this.$refs.screenshotsSectionCarousel;
         const currentPage = carousel.currentPage;
         const pageCount = carousel.pageCount;
 
@@ -771,84 +770,78 @@
 </script>
 
 <style lang="scss">
-  .home {
+  .home-section {
     margin-bottom: -2.875rem;
     color: $content_secondary_color;
-    background: $background_primary_color url("/background/home.svg") 0 0 no-repeat;
+    background: $background_primary_color url("/home/background.svg") 0 0 no-repeat;
   }
 
-  .home-figure {
+  .home-section__figure {
     margin-top: 9.0625rem;
 
     /* dirty hack, because image layers is merged */
     margin-left: -6.5625rem;
   }
 
-  .home-promo {
+  .promo {
     width: 37.5rem;
   }
 
-  .home-promo-header {
+  .promo__heading {
     font-size: $font_size_46;
     font-weight: 600;
   }
 
-  .home-promo-download {
+  .promo__download {
     margin-top: 5.3125rem;
   }
 
-  .home-promo-download-button {
+  .promo__button {
     width: 14.375rem;
     height: 5.0625rem;
     padding: 0 2.75rem;
-    font-size: $font_size_13;
+    font-size: $font_size--13;
     color: $content_secondary_color;
     background: $download_button_background_color;
     border-radius: 2.5rem;
+
+    &:not(:last-of-type) {
+      margin-right: 1.125rem;
+    }
   }
 
-  .home-promo-download-button:not(:last-of-type) {
-    margin-right: 1.125rem;
-  }
-
-  .home-promo-download-button-icon {
+  .promo__icon {
     font-size: $font_size_32;
   }
 
-  .home-promo-download-button-text {
-    text-align: left;
+  .promo__action-description {
     @extend %flex_column;
+    text-align: left;
   }
 
-  .home-promo-download-button-text-store {
+  .promo__store-name {
     font-family: $font_montserrat;
     font-size: $font_size_19;
     font-weight: 600;
   }
 
-  .about {
+  .about-section {
     padding: 5.625rem 0;
   }
 
-  .about-header,
-  .pricing-header,
-  .screenshot-header {
-    color: $header_primary_color;
-  }
-
-  .about-description {
+  .about-section__description {
     margin-bottom: 5.625rem;
   }
 
-  .about-card {
+  .card {
     width: 22.375rem;
-    padding: 3.4375rem 2rem 3.625rem 2rem;
+    padding: 3.4375rem 2rem 3.625rem;
     font-size: $font_size_16;
     line-height: 1.875;
     box-shadow: 1px 2px 1.25rem 1px rgba(34, 31, 31, 0.2);
   }
 
-  .about-card-figure {
+  .card__figure {
     position: relative;
     align-items: center;
     justify-content: center;
@@ -857,7 +850,7 @@
     margin-bottom: 2.625rem;
   }
 
-  .about-card-figure-rhombus {
+  .card__rhombus-layer {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -865,66 +858,62 @@
     height: 100%;
     background: $rhombus_background_primary_color;
     transform: translate(-50%, -50%) rotate(45deg);
+
+    .card:nth-of-type(2) & {
+      background: $rhombus_background_secondary_color;
+    }
   }
 
-  .about-card-figure-icon {
+  .card__icon {
     position: absolute;
     top: 50%;
     left: 50%;
     font-size: $font_size_32;
     color: $icon_secondary_color;
     transform: translate(-50%, -50%);
-  }
 
-  .about-card-header {
-    margin-bottom: 2.5rem;
-  }
-
-  .about-card:nth-of-type(2) {
-    .about-card-figure-rhombus {
-      background: $rhombus_background_secondary_color;
-    }
-
-    .about-card-figure-icon {
+    .card:nth-of-type(2) & {
       color: $icon_primary_color;
     }
+  }
 
-    .about-card-header {
+  .card__heading {
+    margin-bottom: 2.5rem;
+
+    .card:nth-of-type(2) & {
       color: $content_tertiary_color;
     }
   }
 
-  .features {
+  .features-section {
     padding-top: 5.5625rem;
     padding-bottom: 22.375rem;
     color: $content_secondary_color;
-    background: $background_primary_color url("/background/features.svg") 0 0 no-repeat;
-  }
+    background: $background_primary_color url("/features/background.svg") 0 0 no-repeat;
 
-  .features {
     .l-row {
       align-items: flex-start;
     }
   }
 
-  .features-description {
+  .features-section__description {
     margin-bottom: 6.1875rem;
   }
 
-  .features-list {
-    text-align: left;
+  .features__list {
     @extend %list_style;
+    text-align: left;
   }
 
-  .features-list-item {
+  .features__item {
     line-height: 1.875;
+
+    &:not(:last-of-type) {
+      margin-bottom: 4.5rem;
+    }
   }
 
-  .features-list-item:not(:last-of-type) {
-    margin-bottom: 4.5rem;
-  }
-
-  .features-list-item-circle {
+  .figure__circle-layer {
     position: relative;
     width: 4.875rem;
     height: 4.875rem;
@@ -933,7 +922,7 @@
     border-radius: 50%;
   }
 
-  .features-list-item-circle-icon {
+  .figure__icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -942,75 +931,98 @@
     transform: translate(-50%, -50%);
   }
 
-  .features-list-item-header {
+  .features__heading {
     margin-bottom: 1.25rem;
     font-size: $font_size_20;
-    color: $header_secondary_color;
+    color: $heading_secondary_color;
     text-transform: uppercase;
   }
 
-  .features-list-item-description {
+  .features__description {
     width: 34.625rem;
     font-size: $font_size_16;
   }
 
-  .pricing {
+  .pricing-section {
     padding: 5.4375rem 0;
     background: $background_secondary_color;
   }
 
-  .pricing-description {
+  .pricing-section__description {
     margin-bottom: 7.1875rem;
   }
 
-  .pricing-card {
+  .plan {
     width: 22.875rem;
     padding: 2.5625rem 0;
     border: 2px solid $pricing_card_border_color;
     border-radius: 1.25rem;
     box-shadow: 1px 2px 0.375rem 1px rgba(34, 31, 31, 0.24);
+
+    &:nth-of-type(2) {
+      height: 38.6609375rem;
+      padding: 4.35078125rem 0;
+      color: $content_secondary_color;
+      background: linear-gradient(to right, $color_denim, $color_dodger_blue_primary);
+    }
   }
 
-  .pricing-card-header {
+  .plan__heading {
     margin-bottom: 2.25rem;
     font-size: $font_size_24;
+
+    .plan:nth-of-type(2) & {
+      color: $heading_secondary_color;
+    }
   }
 
-  .pricing-card-cost {
+  .plan__price {
     margin-bottom: 2.25rem;
     font-size: $font_size_36;
     line-height: 1;
     color: $content_tertiary_color;
+
+    .plan:nth-of-type(2) & {
+      color: $content_secondary_color;
+    }
   }
 
-  .pricing-card-access {
+  .plan__details {
     margin-bottom: 2.9375rem;
     font-size: $font_size_18;
     font-weight: 600;
     line-height: 1;
-    color: $header_primary_color;
+    color: $heading_primary_color;
+
+    .plan:nth-of-type(2) & {
+      color: $content_secondary_color;
+    }
   }
 
-  .pricing-card-list {
+  .plan__list {
+    @extend %list_style;
     margin-bottom: 2.1875rem;
     font-size: $font_size_14;
     line-height: 2.57142857142;
-    @extend %list_style;
   }
 
-  .pricing-card-list-item-icon {
+  .plan__icon {
     margin-right: 0.375rem;
+
+    &--check {
+      color: $available_option_primary_color;
+
+      .plan:nth-of-type(2) & {
+        color: $available_option_secondary_color;
+      }
+    }
+
+    &--times {
+      color: $unavailable_option_color;
+    }
   }
 
-  .pricing-card-list-item-icon.check-icon {
-    color: $available_option_primary_color;
-  }
-
-  .pricing-card-list-item-icon.times-icon {
-    color: $unavailable_option_color;
-  }
-
-  .pricing-card-purchase-button {
+  .plan__button {
     width: 12.8125rem;
     height: 3.4375rem;
     font-size: $font_size_18;
@@ -1019,168 +1031,144 @@
     text-transform: uppercase;
     background: $purchase_button_background_primary_color;
     border: 2px solid $purchase_button_border_primary_color;
-  }
 
-  .pricing-card:nth-of-type(2) {
-    height: 38.6609375rem;
-    padding: 4.35078125rem 0;
-    color: $content_secondary_color;
-    background: linear-gradient(to right, $color_denim, $color_dodger_blue_primary);
-
-    .pricing-card-header {
-      color: $header_secondary_color;
-    }
-
-    .pricing-card-cost {
-      color: $content_secondary_color;
-    }
-
-    .pricing-card-access {
-      color: $content_secondary_color;
-    }
-
-    .pricing-card-list-item-icon.check-icon {
-      color: $available_option_secondary_color;
-    }
-
-    .pricing-card-purchase-button {
+    .plan:nth-of-type(2) & {
       background: $purchase_button_background_secondary_color;
       border-color: $purchase_button_border_secondary_color;
     }
   }
 
-  .screenshot {
+  .screenshots-section {
     padding-top: 4.75rem;
     padding-bottom: 5.625rem;
   }
 
-  .screenshot-description {
+  .screenshots-section__description {
     margin-bottom: 5.625rem;
   }
 
-  .screenshot-carousel {
+  .screenshots-section__carousel {
     margin-bottom: 3.0625rem;
   }
 
-  .screenshot-carousel-navigation-button {
-    font-size: $font_size_28;
-    color: $icon_primary_color;
-    background: $navigation_button_background_color;
-  }
-
-  .screenshot-carousel-navigation-button:first-child {
+  .navigation__button {
     margin-right: 3.3125rem;
+    font-size: $font_size_28;
+    color: $content_secondary_color;
+    background: $navigation_button_background_color;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 
-  .reviews {
-    padding: 5.625rem 0 5.375rem 0;
+  .reviews-section {
+    padding: 5.625rem 0 5.375rem;
     margin-bottom: 5.625rem;
     color: $content_secondary_color;
     background-image: linear-gradient(-110deg, $color_dodger_blue_primary, $color_denim);
   }
 
-  .reviews-carousel {
+  .carousel {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .VueCarousel-wrapper {
+      margin-bottom: 1.25rem;
+    }
   }
 
-  .reviews-carousel-slide {
+  .slide {
+    @extend %flex_column;
     justify-content: flex-end;
     height: 21.9375rem;
+
+    &:nth-of-type(even) {
+      margin-left: 1.25rem;
+    }
+
+    &:nth-of-type(2n+3) {
+      margin-left: -1.25rem;
+    }
+  }
+
+  .slide__content {
     @extend %flex_column;
-  }
-
-  .reviews-carousel-slide:nth-child(even) {
-    margin-left: 1.25rem;
-  }
-
-  .reviews-carousel-slide:nth-child(2n+3) {
-    margin-left: -1.25rem;
-  }
-
-  .reviews-carousel-slide-content {
     position: relative;
     align-items: center;
     width: 35rem;
     height: 17.3125rem;
-    padding: 3rem 4.6875rem 2.3125rem 4.6875rem;
+    padding: 3rem 4.6875rem 2.3125rem;
     border: 1px solid $reviews_slide_border_color;
-    @extend %flex_column;
+
+    .l-row {
+      align-items: flex-start;
+    }
   }
 
-  .reviews-carousel-slide-content-figure {
+  .slide__figure {
     position: absolute;
     top: -4.625rem;
   }
 
-  .reviews-carousel-slide-content-figure-image {
+  .slide__image {
     width: 7.625rem;
     height: 7.625rem;
     border: 2px solid $reviews_slide_figure_border_color;
     border-radius: 50%;
   }
 
-  .reviews-carousel-slide-content-name {
+  .slide__author {
     font-size: $font_size_18;
     font-weight: 600;
     line-height: 2;
   }
 
-  .reviews-carousel-slide-content-position {
+  .slide__position {
     margin-bottom: 1.625rem;
     font-size: $font_size_14;
   }
 
-  .reviews-carousel-slide-content {
-    .l-row {
-      align-items: flex-start;
+  .slide__icon {
+    font-size: $font_size_27;
+
+    &--quote-left-icon {
+      margin-right: 1.0625rem;
     }
   }
 
-  .reviews-carousel-slide-content-icon {
-    font-size: $font_size_27;
-  }
-
-  .reviews-carousel-slide-content-text {
+  .slide__review-text {
     font-size: $font_size_15;
     text-align: justify;
   }
 
-  .reviews-carousel-slide-content-icon.quote-left-icon {
-    margin-right: 1.0625rem;
-  }
-
-  .reviews-carousel .VueCarousel-wrapper {
-    margin-bottom: 1.25rem;
-  }
-
-  .contact {
+  .contact-section {
     padding: 4.625rem 0;
     font-size: $font_size_15;
     color: $contact_section_content_color;
     background: $contact_section_background_color;
   }
 
-  .contact-header {
+  .contact-section__heading {
     position: relative;
     margin-bottom: 1.6875rem;
     font-family: $font_raleway;
-    color: $contact_section_header_color;
+    color: $contact_section_heading_color;
+
+    &::after {
+      position: absolute;
+      bottom: -0.625rem;
+      left: 50%;
+      width: 4.4375rem;
+      height: 5px;
+      content: "";
+      background: $contact_section_heading_underline_color;
+      transform: translateX(-50%);
+    }
   }
 
-  .contact-header::after {
-    position: absolute;
-    bottom: -0.625rem;
-    left: 50%;
-    width: 4.4375rem;
-    height: 5px;
-    content: "";
-    background: $contact_header_underline_color;
-    transform: translateX(-50%);
-  }
-
-  .contact-description {
+  .contact-section__description {
     margin-bottom: 4.1875rem;
   }
 
@@ -1198,57 +1186,57 @@
     }
   }
 
-  .contact-information-section:not(:last-of-type) {
+  .contact-information__section:not(:last-of-type) {
     margin-bottom: 1.875rem;
   }
 
-  .contact-information-section-icon {
+  .contact-information__icon {
     margin-right: 1rem;
     font-size: $font_size_20;
     color: $icon_tertiary_color;
   }
 
-  .contact-information-section-header {
+  .contact-information__type {
     margin-bottom: 0.625rem;
     font-size: $font_size_18;
-    color: $contact_section_header_color;
+    color: $contact_section_heading_color;
   }
 
-  .contact-information-section-text {
+  .contact-information__value {
     font-weight: 300;
   }
 
-  .contact-form {
+  .feedback {
     width: 48.5625rem;
     text-align: left;
+
+    ::placeholder {
+      font-size: $font_size_16;
+      font-weight: 300;
+      color: $placeholder_color;
+    }
   }
 
-  .contact-form ::placeholder {
-    font-size: $font_size_16;
-    font-weight: 300;
-    color: $placeholder_color;
-  }
-
-  .contact-form-name,
-  .contact-form-email,
-  .contact-form-message {
+  .feedback__name,
+  .feedback__email,
+  .feedback__message {
     width: 100%;
     margin-bottom: 1.625rem;
     border: none;
   }
 
-  .contact-form-name,
-  .contact-form-email {
+  .feedback__name,
+  .feedback__email {
     height: 3rem;
     padding: 0 0.8125rem;
   }
 
-  .contact-form-message {
+  .feedback__message {
     padding: 1.4375rem 0.8125rem;
     resize: none;
   }
 
-  .contact-form-submit-button {
+  .feedback__submit {
     width: 9.875rem;
     height: 2.8125rem;
     padding: 0;
@@ -1257,11 +1245,6 @@
     cursor: pointer;
     background: $send_message_button_background_color;
     border: none;
-  }
-
-  .map {
-    height: 25.0625rem;
-    background: url(/map/map.png) 0 0 no-repeat;
   }
 
   .main-footer {
@@ -1274,20 +1257,20 @@
     }
   }
 
-  .main-footer-copyright {
+  .main-footer__copyright {
     font-family: $font_montserrat;
     font-size: $font_size_16;
     font-weight: 600;
   }
 
-  .main-footer-social-buttons-list {
+  .follow__list {
+    @extend %list_style;
     display: flex;
     font-size: $font_size_30;
     user-select: none;
-    @extend %list_style;
   }
 
-  .main-footer-social-buttons-list-item:not(:last-of-type) {
+  .follow__item:not(:last-of-type) {
     margin-right: 3.4375rem;
   }
 </style>
