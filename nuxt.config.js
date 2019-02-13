@@ -96,11 +96,7 @@ module.exports = {
   */
   styleResources: {
     scss: [
-      '~/assets/base/*.scss',
-      '~/assets/components/*.scss',
-      '~/assets/layout/*.scss',
-      '~/assets/themes/*.scss',
-      '~/assets/main.scss',
+      '~/assets/*/*.scss',
     ],
   },
 
