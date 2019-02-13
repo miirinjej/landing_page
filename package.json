@@ -1,5 +1,5 @@
 {
-  "name": "landing_page",
+  "name": "landing-page",
   "version": "1.0.0",
   "description": "The best app to increase your productivity",
   "author": "Radmir Nabiullin",
@@ -16,8 +16,9 @@
     "@fortawesome/free-regular-svg-icons": "^5.7.0",
     "@fortawesome/free-solid-svg-icons": "^5.7.0",
     "@fortawesome/vue-fontawesome": "^0.1.5",
-    "@nuxtjs/style-resources": "^0.1.1",
+    "@nuxtjs/style-resources": "^0.1.2",
     "cross-env": "^5.2.0",
+    "lodash.debounce": "^4.0.8",
     "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.3.4",

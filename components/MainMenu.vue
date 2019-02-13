@@ -1,34 +1,37 @@
-
 <template>
   <nav class="main-menu">
-    <ul class="main-menu-list">
+    <ul class="main-menu__list">
+      <li
+        class="main-menu__underline"
+        :style="{ left: underlineOffsetLeft + 'px', width: underlineWidth + 'px' }"
+      ></li>
       <li
         v-for="(item, index) in items"
         :key="index"
-        class="main-menu-list-item"
+        class="main-menu__item"
         :class="{ 'is-active': item.isActive }"
+        :data-id="item.name.toLowerCase()"
       >
         <a
-          class="main-menu-link"
-          @click="affixClick(item)"
+          class="main-menu__link"
+          @click="setActive(item)"
         >
           {{ item.name }}
         </a>
       </li>
-      <li
-        class="main-menu-list-underbar"
-        :style="{ left: underbarOffsetLeft + 'px', width: underbarWidth + 'px' }"
-      ></li>
     </ul>
   </nav>
 </template>
 
 <script>
+  import debounce from 'lodash.debounce';
+
   export default {
     name: 'MainMenu',
     props: {
       items: {
         type: Array,
+        required: true,
         validator(value) {
           for (let i = 0; i < value.length; i += 1) {
             if (typeof value[i].name !== 'string') {
@@ -49,85 +52,73 @@
     data() {
       return {
         navbarHeight: 0,
-        underbarOffsetLeft: 0,
-        underbarWidth: 0,
-        scrollEventIsStopped: false,
+        underlineOffsetLeft: 0,
+        underlineWidth: 0,
       };
     },
     mounted() {
       this.navbarHeight = document.querySelector('.navbar').offsetHeight;
 
 
-      this.getUnderbarProperties();
+      this.getUnderlineProperties();
 
 
-      window.addEventListener('scroll', this.affixScroll);
+      window.addEventListener('scroll', this.affix);
     },
     beforeDestroy() {
-      window.removeEventListener('scroll', this.affixScroll);
+      window.removeEventListener('scroll', this.affix);
     },
     methods: {
-      affixClick(item) {
-        this.scrollEventIsStopped = true;
+      setActive(item) {
+        const currentItem = document.getElementById(`${item.name.toLowerCase()}-section`);
 
-
-        const element = document.getElementById(`${item.name.toLowerCase()}`);
-
-        window.scrollTo(0, element.offsetTop - this.navbarHeight);
+        window.scrollTo(0, currentItem.offsetTop - this.navbarHeight);
 
         this.items.forEach((el) => {
-          const mainMenuListItems = document.querySelectorAll('.main-menu-list-item');
+          const mainMenuItems = document.querySelectorAll('.main-menu__item');
 
-          mainMenuListItems.forEach(el => el.classList.remove('is-active'));
+          mainMenuItems.forEach(el => el.classList.remove('is-active'));
 
 
           el.isActive = el === item;
         });
-
-
-        setTimeout(() => {
-          this.getUnderbarProperties();
-        }, 100);
-
-
-        setTimeout(() => {
-          this.scrollEventIsStopped = false;
-        }, 1000);
       },
-      affixScroll() {
-        if (!(this.scrollEventIsStopped)) {
-          const body = document.body;
-          const html = document.documentElement;
-          const scrollTop = body.scrollTop || html.scrollTop;
-          const affixPlaces = document.querySelectorAll('.js-affix-place');
-          const mainMenuListItems = document.querySelectorAll('.main-menu-list-item');
+      affix() {
+        const body = document.body;
+        const html = document.documentElement;
+        const scrollTop = body.scrollTop || html.scrollTop;
+        const affix = document.querySelectorAll('.js-affix');
+        const mainMenuItems = document.querySelectorAll('.main-menu__item');
 
-          for (let i = 0; i < affixPlaces.length; i += 1) {
-            if ((scrollTop + this.navbarHeight) >= affixPlaces[i].offsetTop) {
-              mainMenuListItems[i].classList.add('is-active');
-              for (let j = 0; j < mainMenuListItems.length; j += 1) {
-                if (mainMenuListItems[j] !== mainMenuListItems[i]) {
-                  mainMenuListItems[j].classList.remove('is-active');
-                }
+        for (let i = 0; i < affix.length; i += 1) {
+          if ((scrollTop + this.navbarHeight) >= affix[i].offsetTop) {
+            mainMenuItems[i].classList.add('is-active');
+            for (let j = 0; j < mainMenuItems.length; j += 1) {
+              if (mainMenuItems[j] !== mainMenuItems[i]) {
+                mainMenuItems[j].classList.remove('is-active');
               }
-            } else {
-              mainMenuListItems[i].classList.remove(('is-active'));
             }
-          }
-
-          this.getUnderbarProperties();
-        }
-      },
-      getUnderbarProperties() {
-        const mainMenuListItems = document.querySelectorAll('.main-menu-list-item');
-
-        for (let i = 0; i < mainMenuListItems.length; i += 1) {
-          if (mainMenuListItems[i].classList.contains('is-active')) {
-            this.underbarOffsetLeft = mainMenuListItems[i].offsetLeft;
-            this.underbarWidth = mainMenuListItems[i].offsetWidth;
+          } else {
+            mainMenuItems[i].classList.remove(('is-active'));
           }
         }
+
+
+        this.getUnderlineProperties();
       },
+      getUnderlineProperties: debounce(function () {
+        const mainMenuItems = document.querySelectorAll('.main-menu__item');
+
+        for (let i = 0; i < mainMenuItems.length; i += 1) {
+          if (mainMenuItems[i].classList.contains('is-active')) {
+            this.underlineOffsetLeft = mainMenuItems[i].offsetLeft;
+            this.underlineWidth = mainMenuItems[i].offsetWidth;
+
+
+            this.$router.replace(`/#${mainMenuItems[i].dataset.id}`);
+          }
+        }
+      }, 70),
     },
   };
 </script>
@@ -138,22 +129,26 @@
     height: 100%;
   }
 
-  .main-menu-list {
+  .main-menu__list {
+    @extend %list_style;
     position: relative;
     display: flex;
     justify-content: space-between;
     height: 100%;
     user-select: none;
-    @extend %list_style;
   }
 
-  .main-menu-list-item {
+  .main-menu__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &:not(:last-of-type) {
+      margin-right: 2.25rem;
+    }
   }
 
-  .main-menu-list-underbar {
+  .main-menu__underline {
     position: absolute;
     bottom: 0.625rem;
     left: 0;
@@ -164,11 +159,7 @@
     transition: all 0.5s ease;
   }
 
-  .main-menu-list-item:not(:last-of-type) {
-    margin-right: 2.25rem;
-  }
-
-  .main-menu-link {
+  .main-menu__link {
     color: $main_menu_link_color;
     text-decoration: none;
     cursor: pointer;
