@@ -32,7 +32,7 @@
           <ul class="features__list">
             <li class="features__item">
               <div class="l-row">
-                <figure class="features_figure figure">
+                <figure class="features__figure figure">
                   <div class="figure__circle-layer">
                     <fa
                       class="figure__icon"
