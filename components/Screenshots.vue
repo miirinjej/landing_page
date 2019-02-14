@@ -25,10 +25,20 @@
           :key="index"
         >
           <figure>
-            <img
-              :src="screenshot.imageUrl"
-              :alt="screenshot.name"
-            >
+            <picture>
+              <source
+                :srcset="`${screenshot.imageUrl}.webp`"
+                type="image/webp"
+              >
+              <source
+                :srcset="`${screenshot.imageUrl}.png`"
+                type="image/png"
+              >
+              <img
+                :src="`${screenshot.imageUrl}.png`"
+                :alt="screenshot.name"
+              >
+            </picture>
           </figure>
         </slide>
       </carousel>

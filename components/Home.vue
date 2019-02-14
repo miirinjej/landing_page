@@ -6,10 +6,20 @@
     <div class="l-header">
       <div class="l-row">
         <figure class="home-section__figure">
-          <img
-            src="/home/phone.png"
-            alt="phone"
-          >
+          <picture>
+            <source
+              srcset="/home/phone.webp"
+              type="image/webp"
+            >
+            <source
+              srcset="/home/phone.png"
+              type="image/png"
+            >
+            <img
+              src="/home/phone.png"
+              alt="phone"
+            >
+          </picture>
         </figure>
         <div class="promo">
           <h1 class="promo__heading">

@@ -13,10 +13,20 @@
       </p>
       <div class="l-row">
         <figure class="features-section__figure">
-          <img
-            src="/features/phone.png"
-            alt="hero"
-          >
+          <picture>
+            <source
+              srcset="/features/phone.webp"
+              type="image/webp"
+            >
+            <source
+              srcset="/features/phone.png"
+              type="image/png"
+            >
+            <img
+              src="/features/phone.png"
+              alt="phone"
+            >
+          </picture>
         </figure>
         <div class="features">
           <ul class="features__list">

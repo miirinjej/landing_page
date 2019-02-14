@@ -7,7 +7,22 @@
     <screenshots :screenshots="screenshots" />
     <reviews :reviews="reviews" />
     <contact />
-    <section class="map">
+    <section class="map-section">
+      <picture>
+        <source
+          srcset="/map/map.webp"
+          type="image/webp"
+        >
+        <source
+          srcset="/map/map.jpg"
+          type="image/jpeg"
+        >
+        <img
+          class="map-section__image"
+          src="/map/map.jpg"
+          alt="map"
+        >
+      </picture>
     </section>
     <main-footer />
   </main>
@@ -37,52 +52,52 @@
     data() {
       return {
         screenshots: [
-          { name: 'workout', imageUrl: '/screenshots/workout.png' },
-          { name: 'story', imageUrl: '/screenshots/story.png' },
-          { name: 'map', imageUrl: '/screenshots/map.png' },
-          { name: 'music player', imageUrl: '/screenshots/music_player.png' },
-          { name: 'login', imageUrl: '/screenshots/login.png' },
-          { name: 'story 2', imageUrl: '/screenshots/story_2.png' },
-          { name: 'map 2', imageUrl: '/screenshots/map_2.png' },
+          { name: 'workout', imageUrl: '/screenshots/workout' },
+          { name: 'story', imageUrl: '/screenshots/story' },
+          { name: 'map', imageUrl: '/screenshots/map' },
+          { name: 'music player', imageUrl: '/screenshots/music_player' },
+          { name: 'login', imageUrl: '/screenshots/login' },
+          { name: 'story 2', imageUrl: '/screenshots/story_2' },
+          { name: 'map 2', imageUrl: '/screenshots/map_2' },
         ],
         reviews: [
           {
-            imageUrl: '/reviews/james_santana.png',
+            imageUrl: '/reviews/james_santana',
             author: 'James Santana',
             position: 'Web Developer',
             reviewText:
               'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
           },
           {
-            imageUrl: '/reviews/julia_green.png',
+            imageUrl: '/reviews/julia_green',
             author: 'Julia Green',
             position: 'Web Designer',
             reviewText:
               'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
           },
           {
-            imageUrl: '/reviews/oliver_gomez.png',
+            imageUrl: '/reviews/oliver_gomez',
             author: 'Oliver Gomez',
             position: 'CEO of google',
             reviewText:
               'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
           },
           {
-            imageUrl: '/reviews/rita_watson.png',
+            imageUrl: '/reviews/rita_watson',
             author: 'Rita Watson',
             position: 'Web Designer',
             reviewText:
               'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
           },
           {
-            imageUrl: '/reviews/monica_flower.png',
+            imageUrl: '/reviews/monica_flower',
             author: 'Monica Flower',
             position: 'Marketer',
             reviewText:
               'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, good.',
           },
           {
-            imageUrl: '/reviews/sarah_april.png',
+            imageUrl: '/reviews/sarah_april',
             author: 'Sarah April',
             position: 'IT manager',
             reviewText:
@@ -95,8 +110,11 @@
 </script>
 
 <style lang="scss">
-  .map {
-    height: 25.0625rem;
-    background: url(/map/map.png) 0 0 no-repeat;
+  .map-section {
+    height: 23.625rem;
+  }
+
+  .map-section__image {
+    height: 100%;
   }
 </style>

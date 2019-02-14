@@ -23,11 +23,21 @@
           >
             <div class="slide__content">
               <figure class="slide__figure">
-                <img
-                  class="slide__image"
-                  :src="review.imageUrl"
-                  :alt="review.author"
-                >
+                <picture>
+                  <source
+                    :srcset="`${review.imageUrl}.webp`"
+                    type="image/webp"
+                  >
+                  <source
+                    :srcset="`${review.imageUrl}.jpg`"
+                    type="image/jpeg"
+                  >
+                  <img
+                    class="slide__image"
+                    :src="`${review.imageUrl}.jpg`"
+                    :alt="review.author"
+                  >
+                </picture>
               </figure>
               <div class="slide__author">
                 {{ review.author }}
