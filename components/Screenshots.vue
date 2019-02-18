@@ -123,8 +123,8 @@
   .navigation__button {
     margin-right: 3.3125rem;
     font-size: $font-size__28;
-    color: map-get($root, foreground-color--secondary);
-    background: map-get($navigation, button__background-color);
+    color: map-get($root, "foreground-color--secondary");
+    background: map-get($navigation, "button__background-color");
 
     &:last-of-type {
       margin-right: 0;

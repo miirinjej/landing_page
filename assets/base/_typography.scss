@@ -3,7 +3,7 @@
 
 body {
   font: 1.25rem/1.8 $font-family__poppins;
-  color: map-get($root, foreground-color--primary);
+  color: map-get($root, "foreground-color--primary");
 }
 
 h1,
@@ -20,5 +20,5 @@ h2 {
 
 h3 {
   font-size: $font-size__24;
-  color: map-get($root, heading__foreground-color--tertiary);
+  color: map-get($root, "heading__foreground-color--tertiary");
 }

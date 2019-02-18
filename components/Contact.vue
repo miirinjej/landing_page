@@ -151,7 +151,7 @@
     padding: 2.875rem 1.4375rem;
     margin-right: 0.875rem;
     text-align: left;
-    background: map-get($root, background-color--primary);
+    background: map-get($root, "background-color--primary");
 
     .l-row {
       align-items: flex-start;
@@ -166,7 +166,7 @@
   .contact-information__icon {
     margin-right: 1rem;
     font-size: $font-size__20;
-    color: map-get($root, icon__foreground-color--quaternary);
+    color: map-get($root, "icon__foreground-color--quaternary");
   }
 
   .contact-information__type {
@@ -186,7 +186,7 @@
     ::placeholder {
       font-size: $font-size__16;
       font-weight: 300;
-      color: map-get($feedback, placeholder__foreground-color);
+      color: map-get($feedback, "placeholder__foreground-color");
     }
   }
 
@@ -214,9 +214,9 @@
     height: 2.8125rem;
     padding: 0;
     font-size: $font-size__16;
-    color: map-get($root, foreground-color--secondary);
+    color: map-get($root, "foreground-color--secondary");
     cursor: pointer;
-    background: map-get($feedback, button__background-color);
+    background: map-get($feedback, "button__background-color");
     border: none;
   }
 </style>

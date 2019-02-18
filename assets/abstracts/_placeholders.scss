@@ -1,27 +1,3 @@
-/// Flex items laying out in vertical columns
-///
-/// @access public
-///
-/// @author Radmir Nabiullin
-///
-/// @example scss - Using
-/// .foo {
-///   @extend %flex--column;
-///   justify-content: flex-end;
-/// }
-///
-/// @example css - Output CSS
-/// .foo {
-///   display: flex;
-///   flex-direction: column;
-///   justify-content: flex-end;
-/// }
-%flex--column {
-  display: flex;
-  flex-direction: column;
-}
-
-
 /// List without padding and symbols before list items
 ///
 /// @access public

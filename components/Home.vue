@@ -75,7 +75,7 @@
 <style lang="scss" scoped>
   .home-section {
     margin-bottom: -2.875rem;
-    color: map-get($root, foreground-color--secondary);
+    color: map-get($root, "foreground-color--secondary");
     background: map-get($root, background-color--primary) url("/home/background.svg") 0 0 no-repeat;
   }
 
@@ -104,8 +104,8 @@
     height: 5.0625rem;
     padding: 0 2.75rem;
     font-size: $font-size__13;
-    color: map-get($root, foreground-color--secondary);
-    background: map-get($promo, button__background-color);
+    color: map-get($root, "foreground-color--secondary");
+    background: map-get($promo, "button__background-color");
     border-radius: 2.5rem;
 
     &:not(:last-of-type) {
@@ -118,7 +118,7 @@
   }
 
   .promo__action-description {
-    @extend %flex--column;
+    @include flex--column;
     text-align: left;
   }
 

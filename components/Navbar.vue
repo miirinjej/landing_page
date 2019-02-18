@@ -79,17 +79,17 @@
   .navbar__brand-name {
     font-size: $font-size__34;
     font-weight: 600;
-    color: map-get($root, foreground-color--secondary);
+    color: map-get($root, "foreground-color--secondary");
   }
 
   .navbar__button {
     font-size: $font-size__25;
-    color: map-get($root, foreground-color--tertiary);
-    background: map-get($navbar, button__background-color);
+    color: map-get($root, "foreground-color--tertiary");
+    background: map-get($navbar, "button__background-color");
     transition: background-color 0.5s ease;
 
     &.is-inverted {
-      color: map-get($root, foreground-color--secondary);
+      color: map-get($root, "foreground-color--secondary");
       background: transparent;
     }
   }

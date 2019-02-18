@@ -170,7 +170,7 @@
 <style lang="scss" scoped>
   .pricing-section {
     padding: 5.4375rem 0;
-    background: map-get($root, background-color--secondary);
+    background: map-get($root, "background-color--secondary");
   }
 
   .pricing-section__description {
@@ -180,14 +180,14 @@
   .plan {
     width: 22.875rem;
     padding: 2.5625rem 0;
-    border: 2px solid map-get($root, border__background-color--secondary);
+    border: 2px solid map-get($root, "border__background-color--secondary");
     border-radius: 1.25rem;
     box-shadow: 1px 2px 0.375rem 1px rgba($color-name__mine-shaft--primary, 0.24);
 
     &:nth-of-type(2) {
       height: 38.6609375rem;
       padding: 4.35078125rem 0;
-      color: map-get($root, foreground-color--secondary);
+      color: map-get($root, "foreground-color--secondary");
       background: linear-gradient(to right, $color-name__denim, $color-name__dodger-blue);
     }
   }
@@ -197,7 +197,7 @@
     font-size: $font-size__24;
 
     .plan:nth-of-type(2) & {
-      color: map-get($root, heading__foreground-color--secondary);
+      color: map-get($root, "heading__foreground-color--secondary");
     }
   }
 
@@ -205,10 +205,10 @@
     margin-bottom: 2.25rem;
     font-size: $font-size__36;
     line-height: 1;
-    color: map-get($root, foreground-color--tertiary);
+    color: map-get($root, "foreground-color--tertiary");
 
     .plan:nth-of-type(2) & {
-      color: map-get($root, foreground-color--secondary);
+      color: map-get($root, "foreground-color--secondary");
     }
   }
 
@@ -217,10 +217,10 @@
     font-size: $font-size__18;
     font-weight: 600;
     line-height: 1;
-    color: map-get($root, heading__foreground-color--primary);
+    color: map-get($root, "heading__foreground-color--primary");
 
     .plan:nth-of-type(2) & {
-      color: map-get($root, foreground-color--secondary);
+      color: map-get($root, "foreground-color--secondary");
     }
   }
 
@@ -235,15 +235,15 @@
     margin-right: 0.375rem;
 
     &--check {
-      color: map-get($root, icon__foreground-color--secondary);
+      color: map-get($root, "icon__foreground-color--secondary");
 
       .plan:nth-of-type(2) & {
-        color: map-get($root, icon__foreground-color--primary);
+        color: map-get($root, "icon__foreground-color--primary");
       }
     }
 
     &--times {
-      color: map-get($root, icon__foreground-color--tertiary);
+      color: map-get($root, "icon__foreground-color--tertiary");
     }
   }
 
@@ -252,14 +252,14 @@
     height: 3.4375rem;
     font-size: $font-size__18;
     font-weight: 500;
-    color: map-get($root, foreground-color--tertiary);
+    color: map-get($root, "foreground-color--tertiary");
     text-transform: uppercase;
-    background: map-get($plan, button__background-color--secondary);
-    border: 2px solid map-get($root, border__background-color--secondary);
+    background: map-get($plan, "button__background-color--secondary");
+    border: 2px solid map-get($root, "border__background-color--secondary");
 
     .plan:nth-of-type(2) & {
-      background: map-get($plan, button__background-color--primary);
-      border-color: map-get($root, border__background-color--primary);
+      background: map-get($plan, "button__background-color--primary");
+      border-color: map-get($root, "border__background-color--primary");
     }
   }
 </style>

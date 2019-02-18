@@ -106,11 +106,11 @@
     left: 50%;
     width: 100%;
     height: 100%;
-    background: map-get($card, rhombus-layer__background-color--primary);
+    background: map-get($card, "rhombus-layer__background-color--primary");
     transform: translate(-50%, -50%) rotate(45deg);
 
     .card:nth-of-type(2) & {
-      background: map-get($card, rhombus-layer__background-color--secondary);
+      background: map-get($card, "rhombus-layer__background-color--secondary");
     }
   }
 
@@ -119,11 +119,11 @@
     top: 50%;
     left: 50%;
     font-size: $font-size__32;
-    color: map-get($root, icon__foreground-color--secondary);
+    color: map-get($root, "icon__foreground-color--secondary");
     transform: translate(-50%, -50%);
 
     .card:nth-of-type(2) & {
-      color: map-get($root, icon__foreground-color--primary);
+      color: map-get($root, "icon__foreground-color--primary");
     }
   }
 
@@ -131,7 +131,7 @@
     margin-bottom: 2.5rem;
 
     .card:nth-of-type(2) & {
-      color: map-get($root, foreground-color--tertiary);
+      color: map-get($root, "foreground-color--tertiary");
     }
   }
 </style>

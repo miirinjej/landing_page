@@ -157,12 +157,12 @@
     display: block;
     height: 5px;
     content: "";
-    background: map-get($root, background-color--secondary);
+    background: map-get($root, "background-color--secondary");
     transition: all 0.5s ease;
   }
 
   .main-menu__link {
-    color: map-get($root, link__foreground-color);
+    color: map-get($root, "link__foreground-color");
     text-decoration: none;
     cursor: pointer;
   }

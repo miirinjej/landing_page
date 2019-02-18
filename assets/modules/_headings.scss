@@ -3,6 +3,6 @@
 
 .heading {
   &--primary {
-    color: map-get($root, heading__foreground-color--primary);
+    color: map-get($root, "heading__foreground-color--primary");
   }
 }

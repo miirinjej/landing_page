@@ -6,7 +6,7 @@
 ///
 /// @example scss - Using
 /// .foo {
-///   background: map-get($root, background-color--primary);
+///   background: map-get($root, "background-color--primary");
 /// }
 ///
 /// @example css - Output CSS
@@ -16,62 +16,62 @@
 ///
 /// @type Map
 $root: (
-  background-color--primary: $color-name__white,
-  background-color--secondary: $color-name__hint-of-red,
-  foreground-color--primary: $color-name__dove-gray,
-  foreground-color--secondary: $color-name__white,
-  foreground-color--tertiary: $color-name__dodger-blue,
-  link__foreground-color: $color-name__white,
-  link__foreground-color--hover: $color-name__royal-blue,
-  heading__foreground-color--primary: $color-name__scorpion--primary,
-  heading__foreground-color--secondary: $color-name__white,
-  heading__foreground-color--tertiary: $color-name__scorpion--dark,
-  icon__foreground-color--primary: $color-name__white,
-  icon__foreground-color--secondary: $color-name__dodger-blue,
-  icon__foreground-color--tertiary: $color-name__pomegranate,
-  icon__foreground-color--quaternary: $color-name__royal-blue,
-  border__background-color--primary: $color-name__white,
-  border__background-color--secondary: $color-name__royal-blue,
+  "background-color--primary": $color-name__white,
+  "background-color--secondary": $color-name__hint-of-red,
+  "foreground-color--primary": $color-name__dove-gray,
+  "foreground-color--secondary": $color-name__white,
+  "foreground-color--tertiary": $color-name__dodger-blue,
+  "link__foreground-color": $color-name__white,
+  "link__foreground-color--hover": $color-name__royal-blue,
+  "heading__foreground-color--primary": $color-name__scorpion--primary,
+  "heading__foreground-color--secondary": $color-name__white,
+  "heading__foreground-color--tertiary": $color-name__scorpion--dark,
+  "icon__foreground-color--primary": $color-name__white,
+  "icon__foreground-color--secondary": $color-name__dodger-blue,
+  "icon__foreground-color--tertiary": $color-name__pomegranate,
+  "icon__foreground-color--quaternary": $color-name__royal-blue,
+  "border__background-color--primary": $color-name__white,
+  "border__background-color--secondary": $color-name__royal-blue,
 );
 
 $navbar: (
-  button__background-color: $color-name__white,
+  "button__background-color": $color-name__white,
 );
 
 $promo: (
-  button__background-color: $color-name__ebony-clay,
+  "button__background-color": $color-name__ebony-clay,
 );
 
 $card: (
-  rhombus-layer__background-color--primary: $color-name__athens-gray,
-  rhombus-layer__background-color--secondary: $color-name__dodger-blue,
+  "rhombus-layer__background-color--primary": $color-name__athens-gray,
+  "rhombus-layer__background-color--secondary": $color-name__dodger-blue,
 );
 
 $features: (
-  circle-layer__background-color: $color-name__white,
+  "circle-layer__background-color": $color-name__white,
 );
 
 $plan: (
-  button__background-color--primary: $color-name__white,
-  button__background-color--secondary: $color-name__hint-of-red,
+  "button__background-color--primary": $color-name__white,
+  "button__background-color--secondary": $color-name__hint-of-red,
 );
 
 $navigation: (
-  button__background-color: $color-name__dodger-blue,
+  "button__background-color": $color-name__dodger-blue,
 );
 
 $contact-section: (
-  background-color: $color-name__alabaster,
-  heading__foreground-color: $color-name__mine-shaft--primary,
-  underline__background-color: $color-name__royal-blue,
-  foreground-color: $color-name__mine-shaft--primary,
+  "background-color": $color-name__alabaster,
+  "heading__foreground-color": $color-name__mine-shaft--primary,
+  "underline__background-color": $color-name__royal-blue,
+  "foreground-color": $color-name__mine-shaft--primary,
 );
 
 $feedback: (
-  placeholder__foreground-color: $color-name__silver-chalice,
-  button__background-color: $color-name__royal-blue,
+  "placeholder__foreground-color": $color-name__silver-chalice,
+  "button__background-color": $color-name__royal-blue,
 );
 
 $main-footer: (
-  background-color: $color-name__big-stone,
+  "background-color": $color-name__big-stone,
 );

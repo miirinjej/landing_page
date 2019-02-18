@@ -95,7 +95,7 @@
 <style lang="scss" scoped>
   .main-footer {
     height: 16.875rem;
-    color: map-get($root, foreground-color--secondary);
+    color: map-get($root, "foreground-color--secondary");
     background: map-get($main-footer, background-color);
 
     .l-row {

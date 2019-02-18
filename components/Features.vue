@@ -129,8 +129,8 @@
   .features-section {
     padding-top: 5.5625rem;
     padding-bottom: 22.375rem;
-    color: map-get($root, foreground-color--secondary);
-    background:  url("/features/background.svg") 0 0 no-repeat;
+    color: map-get($root, "foreground-color--secondary");
+    background: url("/features/background.svg") 0 0 no-repeat;
 
     .l-row {
       align-items: flex-start;
@@ -159,7 +159,7 @@
     width: 4.875rem;
     height: 4.875rem;
     margin-right: 2.375rem;
-    background: map-get($features, circle-layer__background-color);
+    background: map-get($features, "circle-layer__background-color");
     border-radius: 50%;
   }
 
@@ -168,14 +168,14 @@
     top: 50%;
     left: 50%;
     font-size: $font-size__36;
-    color: map-get($root, icon__foreground-color--secondary);
+    color: map-get($root, "icon__foreground-color--secondary");
     transform: translate(-50%, -50%);
   }
 
   .features__heading {
     margin-bottom: 1.25rem;
     font-size: $font-size__20;
-    color: map-get($root, heading__foreground-color--secondary);
+    color: map-get($root, "heading__foreground-color--secondary");
     text-transform: uppercase;
   }
 
