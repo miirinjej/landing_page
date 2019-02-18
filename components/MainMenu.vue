@@ -84,7 +84,7 @@
         });
       },
       affix() {
-        const body = document.body;
+        const { body } = document;
         const html = document.documentElement;
         const scrollTop = body.scrollTop || html.scrollTop;
         const affix = document.querySelectorAll('.js-affix');
@@ -130,7 +130,7 @@
   }
 
   .main-menu__list {
-    @extend %list_style;
+    @extend %list;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -155,12 +155,12 @@
     display: block;
     height: 5px;
     content: "";
-    background: $background_secondary_color;
+    background: map-get($root, background-color--secondary);
     transition: all 0.5s ease;
   }
 
   .main-menu__link {
-    color: $main_menu_link_color;
+    color: map-get($root, link__foreground-color);
     text-decoration: none;
     cursor: pointer;
   }

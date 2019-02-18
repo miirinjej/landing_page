@@ -103,8 +103,8 @@
   .reviews-section {
     padding: 5.625rem 0 5.375rem;
     margin-bottom: 5.625rem;
-    color: $content_secondary_color;
-    background-image: linear-gradient(-110deg, $color_dodger_blue_primary, $color_denim);
+    color: map-get($root, foreground-color--secondary);
+    background-image: linear-gradient(-110deg, $color-name__dodger-blue, $color-name__denim);
   }
 
   .carousel {
@@ -118,7 +118,7 @@
   }
 
   .slide {
-    @extend %flex_column;
+    @extend %flex--column;
     justify-content: flex-end;
     height: 21.9375rem;
 
@@ -132,13 +132,13 @@
   }
 
   .slide__content {
-    @extend %flex_column;
+    @extend %flex--column;
     position: relative;
     align-items: center;
     width: 35rem;
     height: 17.3125rem;
     padding: 3rem 4.6875rem 2.3125rem;
-    border: 1px solid $reviews_slide_border_color;
+    border: 1px solid map-get($root, border__background-color--primary);
 
     .l-row {
       align-items: flex-start;
@@ -153,23 +153,23 @@
   .slide__image {
     width: 7.625rem;
     height: 7.625rem;
-    border: 2px solid $reviews_slide_figure_border_color;
+    border: 2px solid map-get($root, border__background-color--primary);
     border-radius: 50%;
   }
 
   .slide__author {
-    font-size: $font_size_18;
+    font-size: $font-size__18;
     font-weight: 600;
     line-height: 2;
   }
 
   .slide__position {
     margin-bottom: 1.625rem;
-    font-size: $font_size_14;
+    font-size: $font-size__14;
   }
 
   .slide__icon {
-    font-size: $font_size_27;
+    font-size: $font-size__27;
 
     &--quote-left-icon {
       margin-right: 1.0625rem;
@@ -177,7 +177,7 @@
   }
 
   .slide__review-text {
-    font-size: $font_size_15;
+    font-size: $font-size__15;
     text-align: justify;
   }
 </style>

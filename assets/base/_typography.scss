@@ -2,23 +2,23 @@
 
 
 body {
-  font: 1.25rem/1.8 $content_font;
-  color: $content_primary_color;
+  font: 1.25rem/1.8 $font-family__poppins;
+  color: map-get($root, foreground-color--primary);
 }
 
 h1,
 h2,
 h3 {
-  font-family: $heading_font;
+  font-family: $font-family__montserrat;
   line-height: 1.34782608695;
 }
 
 h2 {
-  font-size: $font_size_36;
+  font-size: $font-size__36;
   font-weight: 500;
 }
 
 h3 {
-  font-size: $font_size_24;
-  color: $color_scorpion_dark;
+  font-size: $font-size__24;
+  color: map-get($root, heading__foreground-color--tertiary);
 }

@@ -1,5 +1,5 @@
 .l-container {
-  @extend %flex_column;
+  @extend %flex--column;
   justify-content: center;
   text-align: center;
 }
@@ -8,7 +8,7 @@
 .l-header,
 .l-content,
 .l-footer {
-  @extend %flex_column;
+  @extend %flex--column;
   height: 100%;
   padding: 0 19.53125%;
 }
@@ -24,6 +24,6 @@
 }
 
 .l-col {
-  @extend %flex_column;
+  @extend %flex--column;
   align-items: center;
 }

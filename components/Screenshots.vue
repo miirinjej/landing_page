@@ -93,8 +93,8 @@
     methods: {
       navigate(value) {
         const carousel = this.$refs.screenshotsSectionCarousel;
-        const currentPage = carousel.currentPage;
-        const pageCount = carousel.pageCount;
+        const { currentPage } = carousel;
+        const { pageCount } = carousel;
 
         if (value === 'prev') {
           currentPage !== 0 ? carousel.goToPage(currentPage - 1) : carousel.goToPage(pageCount - 1);
@@ -122,9 +122,9 @@
 
   .navigation__button {
     margin-right: 3.3125rem;
-    font-size: $font_size_28;
-    color: $content_secondary_color;
-    background: $navigation_button_background_color;
+    font-size: $font-size__28;
+    color: map-get($root, foreground-color--secondary);
+    background: map-get($navigation, button__background-color);
 
     &:last-of-type {
       margin-right: 0;

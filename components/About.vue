@@ -86,9 +86,9 @@
   .card {
     width: 22.375rem;
     padding: 3.4375rem 2rem 3.625rem;
-    font-size: $font_size_16;
+    font-size: $font-size__16;
     line-height: 1.875;
-    box-shadow: 1px 2px 1.25rem 1px rgba(34, 31, 31, 0.2);
+    box-shadow: 1px 2px 1.25rem 1px rgba($color-name__mine-shaft--primary, 0.2);
   }
 
   .card__figure {
@@ -106,11 +106,11 @@
     left: 50%;
     width: 100%;
     height: 100%;
-    background: $rhombus_background_primary_color;
+    background: map-get($card, rhombus-layer__background-color--primary);
     transform: translate(-50%, -50%) rotate(45deg);
 
     .card:nth-of-type(2) & {
-      background: $rhombus_background_secondary_color;
+      background: map-get($card, rhombus-layer__background-color--secondary);
     }
   }
 
@@ -118,12 +118,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: $font_size_32;
-    color: $icon_secondary_color;
+    font-size: $font-size__32;
+    color: map-get($root, icon__foreground-color--secondary);
     transform: translate(-50%, -50%);
 
     .card:nth-of-type(2) & {
-      color: $icon_primary_color;
+      color: map-get($root, icon__foreground-color--primary);
     }
   }
 
@@ -131,7 +131,7 @@
     margin-bottom: 2.5rem;
 
     .card:nth-of-type(2) & {
-      color: $content_tertiary_color;
+      color: map-get($root, foreground-color--tertiary);
     }
   }
 </style>

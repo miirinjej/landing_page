@@ -85,7 +85,7 @@
           </textarea>
           <button
             type="submit"
-            class="feedback__submit"
+            class="feedback__button"
           >
             Send Message
           </button>
@@ -118,16 +118,16 @@
 <style lang="scss" scoped>
   .contact-section {
     padding: 4.625rem 0;
-    font-size: $font_size_15;
-    color: $contact_section_content_color;
-    background: $contact_section_background_color;
+    font-size: $font-size__15;
+    color: map-get($contact-section, foreground-color);
+    background: map-get($contact-section, background-color);
   }
 
   .contact-section__heading {
     position: relative;
     margin-bottom: 1.6875rem;
-    font-family: $font_raleway;
-    color: $contact_section_heading_color;
+    font-family: $font-family__raleway;
+    color: map-get($contact-section, heading__foreground-color);
 
     &::after {
       position: absolute;
@@ -136,7 +136,7 @@
       width: 4.4375rem;
       height: 5px;
       content: "";
-      background: $contact_section_heading_underline_color;
+      background: map-get($contact-section, underline__background-color);
       transform: translateX(-50%);
     }
   }
@@ -151,7 +151,7 @@
     padding: 2.875rem 1.4375rem;
     margin-right: 0.875rem;
     text-align: left;
-    background: $background_primary_color;
+    background: map-get($root, background-color--primary);
 
     .l-row {
       align-items: flex-start;
@@ -165,14 +165,14 @@
 
   .contact-information__icon {
     margin-right: 1rem;
-    font-size: $font_size_20;
-    color: $icon_tertiary_color;
+    font-size: $font-size__20;
+    color: map-get($root, icon__foreground-color--quaternary);
   }
 
   .contact-information__type {
     margin-bottom: 0.625rem;
-    font-size: $font_size_18;
-    color: $contact_section_heading_color;
+    font-size: $font-size__18;
+    color: map-get($contact-section, heading__foreground-color);
   }
 
   .contact-information__value {
@@ -184,9 +184,9 @@
     text-align: left;
 
     ::placeholder {
-      font-size: $font_size_16;
+      font-size: $font-size__16;
       font-weight: 300;
-      color: $placeholder_color;
+      color: map-get($feedback, placeholder__foreground-color);
     }
   }
 
@@ -209,14 +209,14 @@
     resize: none;
   }
 
-  .feedback__submit {
+  .feedback__button {
     width: 9.875rem;
     height: 2.8125rem;
     padding: 0;
-    font-size: $font_size_16;
-    color: $content_secondary_color;
+    font-size: $font-size__16;
+    color: map-get($root, foreground-color--secondary);
     cursor: pointer;
-    background: $send_message_button_background_color;
+    background: map-get($feedback, button__background-color);
     border: none;
   }
 </style>

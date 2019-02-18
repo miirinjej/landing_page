@@ -75,8 +75,8 @@
 <style lang="scss" scoped>
   .home-section {
     margin-bottom: -2.875rem;
-    color: $content_secondary_color;
-    background: $background_primary_color url("/home/background.svg") 0 0 no-repeat;
+    color: map-get($root, foreground-color--secondary);
+    background: map-get($root, background-color--primary) url("/home/background.svg") 0 0 no-repeat;
   }
 
   .home-section__figure {
@@ -91,7 +91,7 @@
   }
 
   .promo__heading {
-    font-size: $font_size_46;
+    font-size: $font-size__46;
     font-weight: 600;
   }
 
@@ -103,9 +103,9 @@
     width: 14.375rem;
     height: 5.0625rem;
     padding: 0 2.75rem;
-    font-size: $font_size-13;
-    color: $content_secondary_color;
-    background: $download_button_background_color;
+    font-size: $font-size__13;
+    color: map-get($root, foreground-color--secondary);
+    background: map-get($promo, button__background-color);
     border-radius: 2.5rem;
 
     &:not(:last-of-type) {
@@ -114,17 +114,17 @@
   }
 
   .promo__icon {
-    font-size: $font_size_32;
+    font-size: $font-size__32;
   }
 
   .promo__action-description {
-    @extend %flex_column;
+    @extend %flex--column;
     text-align: left;
   }
 
   .promo__store-name {
-    font-family: $font_montserrat;
-    font-size: $font_size_19;
+    font-family: $font-family__montserrat;
+    font-size: $font-size__19;
     font-weight: 600;
   }
 </style>

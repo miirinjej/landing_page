@@ -95,8 +95,8 @@
 <style lang="scss" scoped>
   .main-footer {
     height: 16.875rem;
-    color: $content_secondary_color;
-    background: $main_footer_background_color;
+    color: map-get($root, foreground-color--secondary);
+    background: map-get($main-footer, background-color);
 
     .l-row {
       height: 100%;
@@ -104,15 +104,15 @@
   }
 
   .main-footer__copyright {
-    font-family: $font_montserrat;
-    font-size: $font_size_16;
+    font-family: $font-family__montserrat;
+    font-size: $font-size__16;
     font-weight: 600;
   }
 
   .follow__list {
-    @extend %list_style;
+    @extend %list;
     display: flex;
-    font-size: $font_size_30;
+    font-size: $font-size__30;
     user-select: none;
   }
 

@@ -1,46 +1,41 @@
 // Fonts
 // descriptive variables
-$font_poppins: "Poppins", sans-serif;
-$font_montserrat: "Montserrat", sans-serif;
-$font_raleway: "Raleway", sans-serif;
-$font_size-13: 0.8125rem;
-$font_size_14: 0.875rem;
-$font_size_15: 0.9375rem;
-$font_size_16: 1rem;
-$font_size_18: 1.125rem;
-$font_size_19: 1.1875rem;
-$font_size_20: 1.25rem;
-$font_size_24: 1.5rem;
-$font_size_25: 1.5625rem;
-$font_size_27: 1.6875rem;
-$font_size_28: 1.75rem;
-$font_size_30: 1.875rem;
-$font_size_32: 2rem;
-$font_size_34: 2.125rem;
-$font_size_36: 2.25rem;
-$font_size_46: 2.875rem;
-
-// functional variables
-$content_font: $font_poppins;
-$heading_font: $font_montserrat;
+$font-family__poppins: "Poppins", sans-serif;
+$font-family__montserrat: "Montserrat", sans-serif;
+$font-family__raleway: "Raleway", sans-serif;
+$font-size__13: 0.8125rem;
+$font-size__14: 0.875rem;
+$font-size__15: 0.9375rem;
+$font-size__16: 1rem;
+$font-size__18: 1.125rem;
+$font-size__19: 1.1875rem;
+$font-size__20: 1.25rem;
+$font-size__24: 1.5rem;
+$font-size__25: 1.5625rem;
+$font-size__27: 1.6875rem;
+$font-size__28: 1.75rem;
+$font-size__30: 1.875rem;
+$font-size__32: 2rem;
+$font-size__34: 2.125rem;
+$font-size__36: 2.25rem;
+$font-size__46: 2.875rem;
 
 
 // Colors
 // descriptive variables
-$color_alabaster: #f7f7f7;
-$color_athens_gray: #f3f5f8;
-$color_big_stone: #13253b;
-$color_denim: #1760d7;
-$color_dodger_blue_primary: #4085f6;
-$color_dodger_blue_dark: #1d72fe;
-$color_dove_gray: #737373;
-$color_ebony_clay: #22233a;
-$color_hint_of_red: #f8f6f6;
-$color_mine_shaft: #3b3b3b;
-$color_pomegranate: #f33131;
-$color_royal_blue: #226be2;
-$color_scorpion_primary: #5d5d5d;
-$color_scorpion_dark: #585858;
-$color_silver_chalice: #a2a2a2;
-$color_white: #ffffff;
-$color_wild_sand: #f4f4f4;
+$color-name__alabaster: #f7f7f7;
+$color-name__athens-gray: #f3f5f8;
+$color-name__big-stone: #13253b;
+$color-name__denim: #1760d7;
+$color-name__dodger-blue: #4085f6;
+$color-name__dove-gray: #737373;
+$color-name__ebony-clay: #22233a;
+$color-name__hint-of-red: #f8f6f6;
+$color-name__mine-shaft--primary: #3b3b3b;
+$color-name__mine-shaft--dark: #3b3b3b;
+$color-name__pomegranate: #f33131;
+$color-name__royal-blue: #226be2;
+$color-name__scorpion--primary: #5d5d5d;
+$color-name__scorpion--dark: #585858;
+$color-name__silver-chalice: #a2a2a2;
+$color-name__white: #ffffff;

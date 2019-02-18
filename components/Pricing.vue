@@ -170,7 +170,7 @@
 <style lang="scss" scoped>
   .pricing-section {
     padding: 5.4375rem 0;
-    background: $background_secondary_color;
+    background: map-get($root, background-color--secondary);
   }
 
   .pricing-section__description {
@@ -180,54 +180,54 @@
   .plan {
     width: 22.875rem;
     padding: 2.5625rem 0;
-    border: 2px solid $pricing_card_border_color;
+    border: 2px solid map-get($root, border__background-color--secondary);
     border-radius: 1.25rem;
-    box-shadow: 1px 2px 0.375rem 1px rgba(34, 31, 31, 0.24);
+    box-shadow: 1px 2px 0.375rem 1px rgba($color-name__mine-shaft--primary, 0.24);
 
     &:nth-of-type(2) {
       height: 38.6609375rem;
       padding: 4.35078125rem 0;
-      color: $content_secondary_color;
-      background: linear-gradient(to right, $color_denim, $color_dodger_blue_primary);
+      color: map-get($root, foreground-color--secondary);
+      background: linear-gradient(to right, $color-name__denim, $color-name__dodger-blue);
     }
   }
 
   .plan__heading {
     margin-bottom: 2.25rem;
-    font-size: $font_size_24;
+    font-size: $font-size__24;
 
     .plan:nth-of-type(2) & {
-      color: $heading_secondary_color;
+      color: map-get($root, heading__foreground-color--secondary);
     }
   }
 
   .plan__price {
     margin-bottom: 2.25rem;
-    font-size: $font_size_36;
+    font-size: $font-size__36;
     line-height: 1;
-    color: $content_tertiary_color;
+    color: map-get($root, foreground-color--tertiary);
 
     .plan:nth-of-type(2) & {
-      color: $content_secondary_color;
+      color: map-get($root, foreground-color--secondary);
     }
   }
 
   .plan__details {
     margin-bottom: 2.9375rem;
-    font-size: $font_size_18;
+    font-size: $font-size__18;
     font-weight: 600;
     line-height: 1;
-    color: $heading_primary_color;
+    color: map-get($root, heading__foreground-color--primary);
 
     .plan:nth-of-type(2) & {
-      color: $content_secondary_color;
+      color: map-get($root, foreground-color--secondary);
     }
   }
 
   .plan__list {
-    @extend %list_style;
+    @extend %list;
     margin-bottom: 2.1875rem;
-    font-size: $font_size_14;
+    font-size: $font-size__14;
     line-height: 2.57142857142;
   }
 
@@ -235,31 +235,31 @@
     margin-right: 0.375rem;
 
     &--check {
-      color: $available_option_primary_color;
+      color: map-get($root, icon__foreground-color--secondary);
 
       .plan:nth-of-type(2) & {
-        color: $available_option_secondary_color;
+        color: map-get($root, icon__foreground-color--primary);
       }
     }
 
     &--times {
-      color: $unavailable_option_color;
+      color: map-get($root, icon__foreground-color--tertiary);
     }
   }
 
   .plan__button {
     width: 12.8125rem;
     height: 3.4375rem;
-    font-size: $font_size_18;
+    font-size: $font-size__18;
     font-weight: 500;
-    color: $content_tertiary_color;
+    color: map-get($root, foreground-color--tertiary);
     text-transform: uppercase;
-    background: $purchase_button_background_primary_color;
-    border: 2px solid $purchase_button_border_primary_color;
+    background: map-get($plan, button__background-color--secondary);
+    border: 2px solid map-get($root, border__background-color--secondary);
 
     .plan:nth-of-type(2) & {
-      background: $purchase_button_background_secondary_color;
-      border-color: $purchase_button_border_secondary_color;
+      background: map-get($plan, button__background-color--primary);
+      border-color: map-get($root, border__background-color--primary);
     }
   }
 </style>

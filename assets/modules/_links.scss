@@ -2,10 +2,10 @@
 
 
 .link {
-  color: $link_color;
+  color: map-get($root, link__foreground-color);
   transition: color 0.2s ease;
 
   &:hover {
-    color: $link_hover_color;
+    color: map-get($root, link__foreground-color--hover);
   }
 }

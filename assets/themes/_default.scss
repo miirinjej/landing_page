@@ -1,38 +1,60 @@
-// functional variables
-$background_primary_color: $color_white;
-$background_secondary_color: $color_hint_of_red;
-$content_primary_color: $color_dove_gray;
-$content_secondary_color: $color_white;
-$content_tertiary_color: $color_dodger_blue_primary;
-$main_menu_link_color: $color_white;
-$main_menu_underline_background_color: $color_white;
-$try_for_free_button_background_color: $color_white;
-$heading_primary_color: $color_scorpion_primary;
-$heading_secondary_color: $color_white;
-$download_button_background_color: $color_ebony_clay;
-$icon_primary_color: $color_white;
-$icon_secondary_color: $color_dodger_blue_primary;
-$icon_tertiary_color: $color_royal_blue;
-$rhombus_background_primary_color: $color_athens_gray;
-$rhombus_background_secondary_color: $color_dodger_blue_primary;
-$circle_background_color: $color_white;
-$pricing_card_border_color: $color_royal_blue;
-$available_option_primary_color: $color_dodger_blue_primary;
-$available_option_secondary_color: $color_white;
-$unavailable_option_color: $color_pomegranate;
-$purchase_button_background_primary_color: $color_hint_of_red;
-$purchase_button_background_secondary_color: $color_white;
-$purchase_button_border_primary_color: $color_royal_blue;
-$purchase_button_border_secondary_color: $color_white;
-$navigation_button_background_color: $color_dodger_blue_primary;
-$reviews_slide_figure_border_color: $color_white;
-$reviews_slide_border_color: $color_white;
-$contact_section_background_color: $color_alabaster;
-$contact_section_heading_color: $color_mine_shaft;
-$contact_section_heading_underline_color: $color_royal_blue;
-$contact_section_content_color: $color_mine_shaft;
-$placeholder_color: $color_silver_chalice;
-$send_message_button_background_color: $color_royal_blue;
-$main_footer_background_color: $color_big_stone;
-$link_color: $color_white;
-$link_hover_color: $color_royal_blue;
+$root: (
+  background-color--primary: $color-name__white,
+  background-color--secondary: $color-name__hint-of-red,
+  foreground-color--primary: $color-name__dove-gray,
+  foreground-color--secondary: $color-name__white,
+  foreground-color--tertiary: $color-name__dodger-blue,
+  link__foreground-color: $color-name__white,
+  link__foreground-color--hover: $color-name__royal-blue,
+  heading__foreground-color--primary: $color-name__scorpion--primary,
+  heading__foreground-color--secondary: $color-name__white,
+  heading__foreground-color--tertiary: $color-name__scorpion--dark,
+  icon__foreground-color--primary: $color-name__white,
+  icon__foreground-color--secondary: $color-name__dodger-blue,
+  icon__foreground-color--tertiary: $color-name__pomegranate,
+  icon__foreground-color--quaternary: $color-name__royal-blue,
+  border__background-color--primary: $color-name__white,
+  border__background-color--secondary: $color-name__royal-blue,
+);
+
+$navbar: (
+  navbar__button__background-color: $color-name__white,
+);
+
+$promo: (
+  button__background-color: $color-name__ebony-clay,
+);
+
+$card: (
+  rhombus-layer__background-color--primary: $color-name__athens-gray,
+  rhombus-layer__background-color--secondary: $color-name__dodger-blue,
+);
+
+$features: (
+  circle-layer__background-color: $color-name__white,
+);
+
+$plan: (
+  button__background-color--primary: $color-name__white,
+  button__background-color--secondary: $color-name__hint-of-red,
+);
+
+$navigation: (
+  button__background-color: $color-name__dodger-blue,
+);
+
+$contact-section: (
+  background-color: $color-name__alabaster,
+  heading__foreground-color: $color-name__mine-shaft--primary,
+  underline__background-color: $color-name__royal-blue,
+  foreground-color: $color-name__mine-shaft--primary,
+);
+
+$feedback: (
+  placeholder__foreground-color: $color-name__silver-chalice,
+  button__background-color: $color-name__royal-blue,
+);
+
+$main-footer: (
+  background-color: $color-name__big-stone,
+);

@@ -49,7 +49,7 @@
     },
     methods: {
       handleScroll() {
-        const body = document.body;
+        const { body } = document;
         const html = document.documentElement;
         const scrollTop = body.scrollTop || html.scrollTop;
         const homeImage = document.querySelector('.home-section__figure');
@@ -71,25 +71,25 @@
 
     &.is-sticky {
       margin-top: 0;
-      background: linear-gradient(to right, $color_denim 0, $color_dodger_blue_primary 50%, $color_denim 100%);
-      border-bottom: 5px solid $color_royal_blue;
+      background: linear-gradient(to right, $color-name__denim 0, $color-name__dodger-blue 50%, $color-name__denim 100%);
+      border-bottom: 5px solid $color-name__royal-blue;
     }
   }
 
   .navbar__brand-name {
-    font-size: $font_size_34;
+    font-size: $font-size__34;
     font-weight: 600;
-    color: $content_secondary_color;
+    color: map-get($root, foreground-color--secondary);
   }
 
   .navbar__button {
-    font-size: $font_size_25;
-    color: $content_tertiary_color;
-    background: $try_for_free_button_background_color;
+    font-size: $font-size__25;
+    color: map-get($root, foreground-color--tertiary);
+    background: map-get($navbar, button__background-color);
     transition: background-color 0.5s ease;
 
     &.is-inverted {
-      color: $content_secondary_color;
+      color: map-get($root, foreground-color--secondary);
       background: transparent;
     }
   }

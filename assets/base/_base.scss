@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background: $background_primary_color;
+  background: map-get($root, background-color--primary);
 }
 
 h2 {
