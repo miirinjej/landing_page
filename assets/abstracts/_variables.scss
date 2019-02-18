@@ -1,8 +1,23 @@
-// Fonts
-// descriptive variables
+/// Font family property declaration
+///
+/// @access public
+///
+/// @author Radmir Nabiullin
+///
+/// @type List
 $font-family__poppins: "Poppins", sans-serif;
 $font-family__montserrat: "Montserrat", sans-serif;
 $font-family__raleway: "Raleway", sans-serif;
+
+
+/// Font size property declaration in rem units into property value and
+/// px units in variable name
+///
+/// @access public
+///
+/// @author Radmir Nabiullin
+///
+/// @type Number
 $font-size__13: 0.8125rem;
 $font-size__14: 0.875rem;
 $font-size__15: 0.9375rem;
@@ -21,8 +36,14 @@ $font-size__36: 2.25rem;
 $font-size__46: 2.875rem;
 
 
-// Colors
-// descriptive variables
+/// Color names and their modifiers divided by double hyphen,
+/// used by box shadows, gradients and functional variables
+///
+/// @access public
+///
+/// @author Radmir Nabiullin
+///
+/// @type Color
 $color-name__alabaster: #f7f7f7;
 $color-name__athens-gray: #f3f5f8;
 $color-name__big-stone: #13253b;

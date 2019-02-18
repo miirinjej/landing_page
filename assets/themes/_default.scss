@@ -1,3 +1,20 @@
+/// Default theme functional variables divided into sections using maps
+///
+/// @access public
+///
+/// @author Radmir Nabiullin
+///
+/// @example scss - Using
+/// .foo {
+///   background: map-get($root, background-color--primary);
+/// }
+///
+/// @example css - Output CSS
+/// .foo {
+///   background: #ffffff;
+/// }
+///
+/// @type Map
 $root: (
   background-color--primary: $color-name__white,
   background-color--secondary: $color-name__hint-of-red,
@@ -18,7 +35,7 @@ $root: (
 );
 
 $navbar: (
-  navbar__button__background-color: $color-name__white,
+  button__background-color: $color-name__white,
 );
 
 $promo: (
