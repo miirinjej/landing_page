@@ -1,5 +1,8 @@
 <template>
-  <nav class="main-menu">
+  <nav
+    class="main-menu"
+    :style="{ height: navbarHeight + 'px' }"
+  >
     <ul class="main-menu__list">
       <li
         class="main-menu__underline"
@@ -126,7 +129,6 @@
 <style lang="scss" scoped>
   .main-menu {
     display: inline-block;
-    height: 100%;
   }
 
   .main-menu__list {
