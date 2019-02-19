@@ -111,10 +111,12 @@
 
 <style lang="scss">
   .map-section {
-    height: 23.625rem;
+    height: 20rem;
   }
 
   .map-section__image {
-    height: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
   }
 </style>
