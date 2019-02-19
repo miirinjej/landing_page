@@ -92,6 +92,7 @@ module.exports = {
       ],
     }],
     '@nuxtjs/style-resources',
+    '@nuxtjs/pwa',
   ],
 
   /*
