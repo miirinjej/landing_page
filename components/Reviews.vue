@@ -171,7 +171,7 @@
   .slide__icon {
     font-size: $font-size__27;
 
-    &--quote-left-icon {
+    &--quote-left {
       margin-right: 1.0625rem;
     }
   }

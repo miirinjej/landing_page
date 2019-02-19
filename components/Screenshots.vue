@@ -42,7 +42,7 @@
           </figure>
         </slide>
       </carousel>
-      <div class="navigation">
+      <nav class="navigation">
         <button
           class="navigation__button button button--circle"
           @click="navigate('prev')"
@@ -61,7 +61,7 @@
             icon="long-arrow-alt-right"
           />
         </button>
-      </div>
+      </nav>
     </no-ssr>
   </section>
 </template>

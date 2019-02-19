@@ -8,11 +8,12 @@
         Say Hello To Us!
       </h2>
       <p class="contact-section__description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor incididunt ut labore. et
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+        tempor incididunt ut labore. et
         dolore magna aliqua.
       </p>
       <div class="l-row">
-        <div class="contact-information">
+        <address class="contact-information">
           <div class="contact-information__section">
             <div class="l-row">
               <fa
@@ -61,22 +62,26 @@
               </div>
             </div>
           </div>
-        </div>
+        </address>
         <form
           action=""
           name="feedback"
           class="feedback"
         >
-          <input
-            type="text"
-            class="feedback__name"
-            placeholder="Name"
-          >
-          <input
-            type="text"
-            class="feedback__email"
-            placeholder="Email"
-          >
+          <label>
+            <input
+              type="text"
+              class="feedback__name"
+              placeholder="Name"
+            >
+          </label>
+          <label>
+            <input
+              type="text"
+              class="feedback__email"
+              placeholder="Email"
+            >
+          </label>
           <textarea
             class="feedback__message"
             placeholder="Your Message"
@@ -86,8 +91,9 @@
           <button
             type="submit"
             class="feedback__button"
+            value="Send message"
           >
-            Send Message
+            Send message
           </button>
         </form>
       </div>
@@ -150,6 +156,7 @@
     width: 23.6875rem;
     padding: 2.875rem 1.4375rem;
     margin-right: 0.875rem;
+    font-style: normal;
     text-align: left;
     background: map-get($root, "background-color--primary");
 
@@ -215,6 +222,7 @@
     padding: 0;
     font-size: $font-size__16;
     color: map-get($root, "foreground-color--secondary");
+    text-transform: capitalize;
     cursor: pointer;
     background: map-get($feedback, "button__background-color");
     border: none;
