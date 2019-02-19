@@ -91,7 +91,7 @@
   }
 
   .promo__heading {
-    font-size: $font-size__46;
+    font-size: $font-size--46;
     font-weight: 600;
   }
 
@@ -103,7 +103,7 @@
     width: 14.375rem;
     height: 5.0625rem;
     padding: 0 2.75rem;
-    font-size: $font-size__13;
+    font-size: $font-size--13;
     color: map-get($root, "foreground-color--secondary");
     background: map-get($promo, "button__background-color");
     border-radius: 2.5rem;
@@ -114,7 +114,7 @@
   }
 
   .promo__icon {
-    font-size: $font-size__32;
+    font-size: $font-size--32;
   }
 
   .promo__action-description {
@@ -123,8 +123,8 @@
   }
 
   .promo__store-name {
-    font-family: $font-family__montserrat;
-    font-size: $font-size__19;
+    font-family: $font-family--montserrat;
+    font-size: $font-size--19;
     font-weight: 600;
   }
 </style>

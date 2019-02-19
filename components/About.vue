@@ -86,9 +86,9 @@
   .card {
     width: 22.375rem;
     padding: 3.4375rem 2rem 3.625rem;
-    font-size: $font-size__16;
+    font-size: $font-size--16;
     line-height: 1.875;
-    box-shadow: 1px 2px 1.25rem 1px rgba($color-name__mine-shaft--primary, 0.2);
+    box-shadow: 1px 2px 1.25rem 1px rgba($color-name--mine-shaft_base, 0.2);
   }
 
   .card__figure {
@@ -118,7 +118,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: $font-size__32;
+    font-size: $font-size--32;
     color: map-get($root, "icon__foreground-color--secondary");
     transform: translate(-50%, -50%);
 

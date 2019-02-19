@@ -104,7 +104,7 @@
     padding: 5.625rem 0 5.375rem;
     margin-bottom: 5.625rem;
     color: map-get($root, "foreground-color--secondary");
-    background-image: linear-gradient(-110deg, $color-name__dodger-blue, $color-name__denim);
+    background-image: linear-gradient(-110deg, $color-name--dodger-blue, $color-name--denim);
   }
 
   .carousel {
@@ -158,18 +158,18 @@
   }
 
   .slide__author {
-    font-size: $font-size__18;
+    font-size: $font-size--18;
     font-weight: 600;
     line-height: 2;
   }
 
   .slide__position {
     margin-bottom: 1.625rem;
-    font-size: $font-size__14;
+    font-size: $font-size--14;
   }
 
   .slide__icon {
-    font-size: $font-size__27;
+    font-size: $font-size--27;
 
     &--quote-left {
       margin-right: 1.0625rem;
@@ -177,7 +177,7 @@
   }
 
   .slide__review-text {
-    font-size: $font-size__15;
+    font-size: $font-size--15;
     text-align: justify;
   }
 </style>

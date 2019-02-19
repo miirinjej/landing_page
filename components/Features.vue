@@ -167,20 +167,20 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: $font-size__36;
+    font-size: $font-size--36;
     color: map-get($root, "icon__foreground-color--secondary");
     transform: translate(-50%, -50%);
   }
 
   .features__heading {
     margin-bottom: 1.25rem;
-    font-size: $font-size__20;
+    font-size: $font-size--20;
     color: map-get($root, "heading__foreground-color--secondary");
     text-transform: uppercase;
   }
 
   .features__description {
     width: 34.625rem;
-    font-size: $font-size__16;
+    font-size: $font-size--16;
   }
 </style>

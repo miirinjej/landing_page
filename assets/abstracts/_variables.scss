@@ -5,9 +5,9 @@
 /// @author Radmir Nabiullin
 ///
 /// @type List
-$font-family__poppins: ("Poppins", sans-serif);
-$font-family__montserrat: ("Montserrat", sans-serif);
-$font-family__raleway: ("Raleway", sans-serif);
+$font-family--poppins: ("Poppins", sans-serif);
+$font-family--montserrat: ("Montserrat", sans-serif);
+$font-family--raleway: ("Raleway", sans-serif);
 
 
 /// Font size property declaration in rem units into property value and
@@ -18,25 +18,25 @@ $font-family__raleway: ("Raleway", sans-serif);
 /// @author Radmir Nabiullin
 ///
 /// @type Number
-$font-size__13: 0.8125rem;
-$font-size__14: 0.875rem;
-$font-size__15: 0.9375rem;
-$font-size__16: 1rem;
-$font-size__18: 1.125rem;
-$font-size__19: 1.1875rem;
-$font-size__20: 1.25rem;
-$font-size__24: 1.5rem;
-$font-size__25: 1.5625rem;
-$font-size__27: 1.6875rem;
-$font-size__28: 1.75rem;
-$font-size__30: 1.875rem;
-$font-size__32: 2rem;
-$font-size__34: 2.125rem;
-$font-size__36: 2.25rem;
-$font-size__46: 2.875rem;
+$font-size--13: 0.8125rem;
+$font-size--14: 0.875rem;
+$font-size--15: 0.9375rem;
+$font-size--16: 1rem;
+$font-size--18: 1.125rem;
+$font-size--19: 1.1875rem;
+$font-size--20: 1.25rem;
+$font-size--24: 1.5rem;
+$font-size--25: 1.5625rem;
+$font-size--27: 1.6875rem;
+$font-size--28: 1.75rem;
+$font-size--30: 1.875rem;
+$font-size--32: 2rem;
+$font-size--34: 2.125rem;
+$font-size--36: 2.25rem;
+$font-size--46: 2.875rem;
 
 
-/// Color names and their modifiers divided by double hyphen,
+/// Color names and their shades divided by underscore,
 /// used by box shadows, gradients and functional variables
 ///
 /// @access public
@@ -44,19 +44,19 @@ $font-size__46: 2.875rem;
 /// @author Radmir Nabiullin
 ///
 /// @type Color
-$color-name__alabaster: #f7f7f7;
-$color-name__athens-gray: #f3f5f8;
-$color-name__big-stone: #13253b;
-$color-name__denim: #1760d7;
-$color-name__dodger-blue: #4085f6;
-$color-name__dove-gray: #737373;
-$color-name__ebony-clay: #22233a;
-$color-name__hint-of-red: #f8f6f6;
-$color-name__mine-shaft--primary: #3b3b3b;
-$color-name__mine-shaft--dark: #3b3b3b;
-$color-name__pomegranate: #f33131;
-$color-name__royal-blue: #226be2;
-$color-name__scorpion--primary: #5d5d5d;
-$color-name__scorpion--dark: #585858;
-$color-name__silver-chalice: #a2a2a2;
-$color-name__white: #ffffff;
+$color-name--alabaster: #f7f7f7;
+$color-name--athens-gray: #f3f5f8;
+$color-name--big-stone: #13253b;
+$color-name--denim: #1760d7;
+$color-name--dodger-blue: #4085f6;
+$color-name--dove-gray: #737373;
+$color-name--ebony-clay: #22233a;
+$color-name--hint-of-red: #f8f6f6;
+$color-name--mine-shaft_base: #3b3b3b;
+$color-name--mine-shaft_dark: #3b3b3b;
+$color-name--pomegranate: #f33131;
+$color-name--royal-blue: #226be2;
+$color-name--scorpion_base: #5d5d5d;
+$color-name--scorpion_dark: #585858;
+$color-name--silver-chalice: #a2a2a2;
+$color-name--white: #ffffff;

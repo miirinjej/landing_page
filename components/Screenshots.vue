@@ -122,7 +122,7 @@
 
   .navigation__button {
     margin-right: 3.3125rem;
-    font-size: $font-size__28;
+    font-size: $font-size--28;
     color: map-get($root, "foreground-color--secondary");
     background: map-get($navigation, "button__background-color");
 

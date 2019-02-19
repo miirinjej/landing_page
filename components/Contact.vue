@@ -124,7 +124,7 @@
 <style lang="scss" scoped>
   .contact-section {
     padding: 4.625rem 0;
-    font-size: $font-size__15;
+    font-size: $font-size--15;
     color: map-get($contact-section, foreground-color);
     background: map-get($contact-section, background-color);
   }
@@ -132,7 +132,7 @@
   .contact-section__heading {
     position: relative;
     margin-bottom: 1.6875rem;
-    font-family: $font-family__raleway;
+    font-family: $font-family--raleway;
     color: map-get($contact-section, heading__foreground-color);
 
     &::after {
@@ -172,13 +172,13 @@
 
   .contact-information__icon {
     margin-right: 1rem;
-    font-size: $font-size__20;
+    font-size: $font-size--20;
     color: map-get($root, "icon__foreground-color--quaternary");
   }
 
   .contact-information__type {
     margin-bottom: 0.625rem;
-    font-size: $font-size__18;
+    font-size: $font-size--18;
     color: map-get($contact-section, heading__foreground-color);
   }
 
@@ -191,7 +191,7 @@
     text-align: left;
 
     ::placeholder {
-      font-size: $font-size__16;
+      font-size: $font-size--16;
       font-weight: 300;
       color: map-get($feedback, "placeholder__foreground-color");
     }
@@ -220,7 +220,7 @@
     width: 9.875rem;
     height: 2.8125rem;
     padding: 0;
-    font-size: $font-size__16;
+    font-size: $font-size--16;
     color: map-get($root, "foreground-color--secondary");
     text-transform: capitalize;
     cursor: pointer;

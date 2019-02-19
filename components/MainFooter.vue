@@ -104,15 +104,15 @@
   }
 
   .main-footer__copyright {
-    font-family: $font-family__montserrat;
-    font-size: $font-size__16;
+    font-family: $font-family--montserrat;
+    font-size: $font-size--16;
     font-weight: 600;
   }
 
   .follow__list {
     @extend %list;
     display: flex;
-    font-size: $font-size__30;
+    font-size: $font-size--30;
     user-select: none;
   }
 
