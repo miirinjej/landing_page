@@ -12,6 +12,7 @@
                 class="link"
                 href="https://www.facebook.com/"
                 target="_blank"
+                aria-label="Facebook"
               >
                 <fa
                   :icon="['fab', 'facebook-f']"
@@ -24,6 +25,7 @@
                 class="link"
                 href="https://twitter.com/"
                 target="_blank"
+                aria-label="Twitter"
               >
                 <fa
                   :icon="['fab', 'twitter']"
@@ -36,6 +38,7 @@
                 class="link"
                 href="https://www.instagram.com/"
                 target="_blank"
+                aria-label="Instagram"
               >
                 <fa
                   :icon="['fab', 'instagram']"
@@ -48,6 +51,7 @@
                 class="link"
                 href="https://plus.google.com/"
                 target="_blank"
+                aria-label="Google Plus"
               >
                 <fa
                   :icon="['fab', 'google-plus-g']"
@@ -60,6 +64,7 @@
                 class="link"
                 href="https://www.behance.net/"
                 target="_blank"
+                aria-label="Behance"
               >
                 <fa
                   :icon="['fab', 'behance']"
@@ -72,6 +77,7 @@
                 class="link"
                 href="https://dribbble.com/"
                 target="_blank"
+                aria-label="Dribbble"
               >
                 <fa
                   :icon="['fab', 'dribbble']"

@@ -45,6 +45,7 @@
       <nav class="navigation">
         <button
           class="navigation__button button button--circle"
+          aria-label="Previous slide"
           @click="navigate('prev')"
         >
           <fa
@@ -54,6 +55,7 @@
         </button>
         <button
           class="navigation__button button button--circle"
+          aria-label="Next slide"
           @click="navigate('next')"
         >
           <fa
