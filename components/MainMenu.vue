@@ -66,7 +66,7 @@
       this.getUnderlineProperties();
 
 
-      window.addEventListener('scroll', this.affix);
+      window.addEventListener('scroll', this.affix, { passive: true });
     },
     beforeDestroy() {
       window.removeEventListener('scroll', this.affix);
