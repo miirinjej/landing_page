@@ -39,7 +39,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/vue-carousel', ssr: false },
+    { src: '~/plugins/vue-carousel', mode: 'client' },
   ],
 
   /*
@@ -93,6 +93,7 @@ module.exports = {
     }],
     '@nuxtjs/style-resources',
     '@nuxtjs/pwa',
+    'nuxt-leaflet',
   ],
 
   /*

@@ -24,6 +24,7 @@
     "normalize.css": "^8.0.1",
     "nuxt": "^2.3.4",
     "nuxt-fontawesome": "^0.4.0",
+    "nuxt-leaflet": "0.0.15",
     "sass-loader": "^7.1.0",
     "vue-carousel": "^0.17.0"
   },

@@ -8,21 +8,19 @@
     <reviews :reviews="reviews" />
     <contact />
     <section class="map-section">
-      <picture>
-        <source
-          srcset="/map/map.webp"
-          type="image/webp"
-        >
-        <source
-          srcset="/map/map.jpg"
-          type="image/jpeg"
-        >
-        <img
-          class="map-section__image"
-          src="/map/map.jpg"
-          alt="map"
-        >
-      </picture>
+      <div
+        class="map-section__map"
+      >
+        <no-ssr placeholder="Loading...">
+          <l-map
+            :zoom="12"
+            :center="[23.7083983, 90.4048237]"
+          >
+            <l-tile-layer url="https://{s}.tile.osm.org/{z}/{x}/{y}.png" />
+            <l-marker :lat-lng="[23.7083983, 90.4048237]" />
+          </l-map>
+        </no-ssr>
+      </div>
     </section>
     <main-footer />
   </main>
@@ -111,12 +109,10 @@
 
 <style lang="scss">
   .map-section {
-    height: 20rem;
+    height: 25rem;
   }
 
-  .map-section__image {
-    width: 100%;
-    height: auto;
-    max-height: 100%;
+  .map-section__map {
+    height: 100%;
   }
 </style>
