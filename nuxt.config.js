@@ -19,7 +19,6 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Poppins:300,400,500,600|Raleway:600' },
     ],
   },
 
@@ -94,6 +93,7 @@ module.exports = {
     '@nuxtjs/style-resources',
     '@nuxtjs/pwa',
     'nuxt-leaflet',
+    'nuxt-webfontloader',
   ],
 
   /*
@@ -103,6 +103,19 @@ module.exports = {
     scss: [
       '~/assets/*/*.scss',
     ],
+  },
+
+  /*
+  ** Style resources
+  */
+  webfontloader: {
+    google: {
+      families: [
+        'Montserrat:400,500,600',
+        'Poppins:300,400,500,600',
+        'Raleway:600',
+      ],
+    },
   },
 
   /*
