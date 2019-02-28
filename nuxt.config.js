@@ -106,7 +106,7 @@ module.exports = {
   },
 
   /*
-  ** Style resources
+  ** Web font loader
   */
   webfontloader: {
     google: {
