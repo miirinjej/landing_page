@@ -1,6 +1,6 @@
 # landing-page
 
-A web app developed from [app landing page](https://www.behance.net/gallery/69566341/App-Landing-Page-FREE-Download) free template designed by [UIXREX](https://www.behance.net/UIXREX) team © 2018, available under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en_US) 
+A web app developed from [app landing page](https://www.behance.net/gallery/69566341/App-Landing-Page-FREE-Download) free template designed by [UIXREX](https://www.behance.net/UIXREX) team © 2018, available via license: [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en_US) 
 
 ## Preview
 
