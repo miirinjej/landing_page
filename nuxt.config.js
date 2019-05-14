@@ -1,7 +1,7 @@
 const pkg = require('./package');
 
 
-module.exports = {
+export default {
   mode: 'universal',
 
   /*
