@@ -116,9 +116,6 @@
           if (mainMenuItems[i].classList.contains('is-active')) {
             this.underlineOffsetLeft = mainMenuItems[i].offsetLeft;
             this.underlineWidth = mainMenuItems[i].offsetWidth;
-
-
-            this.$router.replace(`/#${mainMenuItems[i].dataset.id}`);
           }
         }
       }, 70),
