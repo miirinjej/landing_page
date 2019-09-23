@@ -4,6 +4,9 @@
 ///
 /// @author Radmir Nabiullin
 ///
+/// @example
+///   $font-family--open-sans: ("Open Sans", sans-serif);
+///
 /// @type List
 $font-family--poppins: ("Poppins", sans-serif);
 $font-family--montserrat: ("Montserrat", sans-serif);
@@ -16,6 +19,9 @@ $font-family--raleway: ("Raleway", sans-serif);
 /// @access public
 ///
 /// @author Radmir Nabiullin
+///
+/// @example
+///   $font-size--13: 0.8125rem;
 ///
 /// @type Number
 $font-size--13: 0.8125rem;
@@ -42,6 +48,11 @@ $font-size--46: 2.875rem;
 /// @access public
 ///
 /// @author Radmir Nabiullin
+///
+/// @example
+///   $color-name--mine-black: #000000;
+///   $color-name--mine-shaft_base: #2c2c2c;
+///   $color-name--mine-shaft_dark: #212121;
 ///
 /// @type Color
 $color-name--alabaster: #f7f7f7;

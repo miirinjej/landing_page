@@ -4,13 +4,13 @@
 ///
 /// @author Radmir Nabiullin
 ///
-/// @example scss - Using
+/// @example scss — Using
 /// .foo {
 ///   @include flex--column;
 ///   justify-content: flex-end;
 /// }
 ///
-/// @example css - Output CSS
+/// @example css — Output CSS
 /// .foo {
 ///   display: flex;
 ///   flex-direction: column;

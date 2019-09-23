@@ -4,15 +4,27 @@
 ///
 /// @author Radmir Nabiullin
 ///
-/// @example scss - Using
-/// .foo {
-///   background: map-get($root, "background-color--primary");
-/// }
+/// @example
+///   $root: (
+///     "background-color--primary": $color-name--white,
+///     "background-color--secondary": $color-name--hint-of-red,
+///     "foreground-color--primary": $color-name--dove-gray,
+///     "link__foreground-color": $color-name--white,
+///   );
 ///
-/// @example css - Output CSS
-/// .foo {
-///   background: #ffffff;
-/// }
+///   $main-footer: (
+///     "background-color": $color-name--big-stone,
+///   );
+///
+/// @example scss — Using
+///   .foo {
+///     background: map-get($root, "background-color--primary");
+///   }
+///
+/// @example css — Output CSS
+///   .foo {
+///     background: #ffffff;
+///   }
 ///
 /// @type Map
 $root: (
