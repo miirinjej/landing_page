@@ -1,5 +1,5 @@
 <template>
-  <main class="l-container">
+  <div class="l-container">
     <home />
     <about />
     <features />
@@ -23,7 +23,7 @@
       </div>
     </section>
     <main-footer />
-  </main>
+  </div>
 </template>
 
 <script>
